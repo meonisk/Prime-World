@@ -1,2 +1,7 @@
-﻿.idea
-pw/branches/r1117/Bin/logs
+.idea
+build/
+logs/
+*.pdb
+editor/build/logs/
+client/build/logs/
+server/*/build/logs/

@@ -5,28 +5,28 @@
 
 Das Spiel besteht aus zwei Teilen: Schloss und Kampfteil. Der Spieler übernimmt die Rolle eines Lords oder einer Lady. Im Schloss baut der Spieler Gebäude, rekrutiert Helden und wählt Talente für sie aus. Im Kampfteil steuert der Spieler einen Helden und kämpft mithilfe von Talenten gegen andere Spieler in Team-Schlachten.
 
-Im Jahr 2024 wurde der Quellcode des Kampf-Teils des Spiels unter einer [speziellen Lizenz](LICENSE.md) veröffentlicht, die die kommerzielle Nutzung untersagt, aber für die Gaming-Community, das Studium und Forschungszwecke vollständig offen ist.
-Bitte lesen Sie die Bedingungen der [Lizenzvereinbarung](LICENSE.md) sorgfältig, bevor Sie das Spiel verwenden.
+Im Jahr 2024 wurde der Quellcode des Kampf-Teils des Spiels unter einer [speziellen Lizenz](../../LICENSE.md) veröffentlicht, die die kommerzielle Nutzung untersagt, aber für die Gaming-Community, das Studium und Forschungszwecke vollständig offen ist.
+Bitte lesen Sie die Bedingungen der [Lizenzvereinbarung](../../LICENSE.md) sorgfältig, bevor Sie das Spiel verwenden.
 
 ## Was enthält dieses Repository?
 - `pw` — der Hauptcode des Kampfteils
-- `pw_publish` — kompilierter Client des Kampfteils mit Cheat-Codes und einem Client-Editor
-- `pw/branches/r1117/Bin/PF_Editor.exe` — Editor für Spieldaten
+- `client/build (client), server/ (servers)` — kompilierter Client des Kampfteils mit Cheat-Codes und einem Client-Editor
+- `editor/build/PF_Editor.exe` — Editor für Spieldaten
 
 ## Vorbereitung
 Sie müssen die Daten aus diesem Repository herunterladen und den Ordner `Bin` mit den Spieldaten zusammenführen. So geht's:
 
-1. Kopieren Sie den Ordner `pw_publish/branch/Client/PvP/Bin` nach `pw/branches/r1117` und ersetzen Sie vorhandene Dateien.
-2. Starten Sie den Client mit Cheat-Codes: `pw/branches/r1117/Bin/PW_Game.exe`.
+1. Kopieren Sie den Ordner `client/build/Bin` nach `(legacy path, now split across engine/, client/, server/, editor/, assets/, localization/, profiles/, vendor/, tools/)` und ersetzen Sie vorhandene Dateien.
+2. Starten Sie den Client mit Cheat-Codes: `client/build/Bin/PW_Game.exe`.
 3. Wenn alles korrekt ist, sehen Sie das Ladefenster, allerdings ohne Bild und mit schwarzem Bildschirm.
 4. Im Ordner `Profiles -> game.cfg` ändern Sie den Wert von `local_game 0` auf `local_game 1`.
 5. Starten Sie den Client mit Cheat-Codes. Jetzt sollten Sie die Lobby sehen, in der Sie eine Karte und einen Helden auswählen und ein Spiel starten können.
 6. Drücken Sie im Spiel die Tilde-Taste (~) auf der Tastatur, um die Konsole für Cheat-Codes zu öffnen.
 
-Bei Fehlern schauen Sie in die Log-Dateien unter `pw/branches/r1117/Bin/logs`.
+Bei Fehlern schauen Sie in die Log-Dateien unter `logs/`.
 
 ## Spieldaten
-Die Spieldaten können über den Editor bearbeitet werden und befinden sich in `pw/branches/r1117/Data`
+Die Spieldaten können über den Editor bearbeitet werden und befinden sich in `assets/`
 
 Beim Bearbeiten der Daten können Sie:
 1. Die Beschreibungen der Talente und Fähigkeiten der Helden ändern.
@@ -40,19 +40,19 @@ Beim Bearbeiten der Daten können Sie:
 Nach der Änderung der Daten muss kein neuer Client aus dem Code gebaut werden. Klicken Sie einfach auf `File -> Save`, und alle Änderungen werden sofort im Spielclient `PW_Game` wirksam. Zum Beispiel können Sie die Beschreibung eines beliebigen Talentes oder einer Heldenfähigkeit ändern.
 
 ## Spieldateneditor
-Der Spieldateneditor befindet sich unter `pw/branches/r1117/Bin/PF_Editor.exe`
+Der Spieldateneditor befindet sich unter `editor/build/PF_Editor.exe`
 
 Beim ersten Öffnen des Editors müssen Sie den Pfad zu `Data` konfigurieren:
 1. `Tools -> File System Configuration`.
 2. `Add -> WinFileSystem`.
-3. Setzen Sie den Ordner Data als System-Root: `pw/branches/r1117/Data`.
+3. Setzen Sie den Ordner Data als System-Root: `assets/`.
 4. Schließen Sie die Fenster.
 5. Im Editor: `Views -> Object Browser` und `Views -> Properties Editor`. Das sind die beiden wichtigsten Bereiche zum Bearbeiten von Daten.
 
 Die Tabs des Editors können verschoben und angedockt werden.
 
 ## Spielclient mit Cheat-Codes
-Im Repository finden Sie den bereits kompilierten Spielclient mit Cheat-Codes: `pw_publish/branch/Client/PvP/Bin/PW_Game.exe`
+Im Repository finden Sie den bereits kompilierten Spielclient mit Cheat-Codes: `client/build/Bin/PW_Game.exe`
 
 Die Ordner `Localization`, `Profiles` und `Data` müssen sich im gleichen Verzeichnis wie der Ordner `Bin` befinden. Daher muss der Client während der Vorbereitung in den Ordner `pw` verschoben werden. Bei Änderungen am Code ist ein Neuaufbau des Clients erforderlich.
 

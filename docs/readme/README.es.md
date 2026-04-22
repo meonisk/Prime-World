@@ -5,28 +5,28 @@
 
 El juego consta de dos partes: Castillo y Batalla. El jugador asume el papel de Lord o Lady. En el Castillo, el jugador construye edificios, contrata Héroes y selecciona Talentos para ellos. En la parte de Batalla, el jugador controla a un Héroe y utiliza Talentos para luchar contra otros jugadores en batallas por equipos.
 
-En 2024, el código fuente de la parte de Batalla del juego se liberó bajo una [licencia especial](LICENSE.md), que prohíbe el uso comercial pero está completamente abierta para la comunidad de jugadores, el estudio y la investigación.
-Por favor, lea cuidadosamente los términos del [acuerdo de licencia](LICENSE.md) antes de usar.
+En 2024, el código fuente de la parte de Batalla del juego se liberó bajo una [licencia especial](../../LICENSE.md), que prohíbe el uso comercial pero está completamente abierta para la comunidad de jugadores, el estudio y la investigación.
+Por favor, lea cuidadosamente los términos del [acuerdo de licencia](../../LICENSE.md) antes de usar.
 
 ## Qué contiene este repositorio
 - `pw` — el código principal de la parte de batalla
-- `pw_publish` — cliente compilado de la parte de batalla con códigos de trucos y editor de cliente
-- `pw/branches/r1117/Bin/PF_Editor.exe` — editor de datos del juego
+- `client/build (client), server/ (servers)` — cliente compilado de la parte de batalla con códigos de trucos y editor de cliente
+- `editor/build/PF_Editor.exe` — editor de datos del juego
 
 ## Preparación
 Debes descargar los datos de este repositorio y fusionar la carpeta `Bin` con los datos principales del juego. Así es como se hace:
 
-1. Copia la carpeta `pw_publish/branch/Client/PvP/Bin` a `pw/branches/r1117`, reemplazando los archivos existentes.
-2. Ejecuta el cliente con los códigos de trucos `pw/branches/r1117/Bin/PW_Game.exe`.
+1. Copia la carpeta `client/build/Bin` a `(legacy path, now split across engine/, client/, server/, editor/, assets/, localization/, profiles/, vendor/, tools/)`, reemplazando los archivos existentes.
+2. Ejecuta el cliente con los códigos de trucos `client/build/Bin/PW_Game.exe`.
 3. Si todo está correcto, verás la ventana de carga, pero sin imagen y con pantalla negra.
 4. En la carpeta `Profiles -> game.cfg`, cambia el valor de `local_game 0` a `local_game 1`.
 5. Ejecuta el cliente con los códigos de trucos. Ahora deberías ver el lobby donde puedes seleccionar el mapa, héroe y comenzar la batalla.
 6. En el juego, presiona la tecla Tilde (~) en el teclado y verás la consola para ingresar códigos de trucos.
 
-Si ocurre algún error, revisa los archivos de registro en `pw/branches/r1117/Bin/logs`.
+Si ocurre algún error, revisa los archivos de registro en `logs/`.
 
 ## Datos del juego
-Los datos se pueden editar mediante el editor y se encuentran en `pw/branches/r1117/Data`
+Los datos se pueden editar mediante el editor y se encuentran en `assets/`
 
 Editando los datos, puedes:
 1. Cambiar descripciones de talentos y habilidades de héroes.
@@ -40,19 +40,19 @@ Editando los datos, puedes:
 Al modificar datos, no es necesario compilar un nuevo cliente a partir del código. Simplemente presiona `File -> Save`, y todos los cambios aparecerán instantáneamente en el cliente del juego `PW_Game`. Por ejemplo, puedes intentar cambiar la descripción de un talento o habilidad de un héroe.
 
 ## Editor de datos del juego
-El editor de datos del juego se encuentra en `pw/branches/r1117/Bin/PF_Editor.exe`
+El editor de datos del juego se encuentra en `editor/build/PF_Editor.exe`
 
 Al abrir el editor por primera vez, necesitas configurar la ruta a `Data`:
 1. `Tools -> File System Configuration`.
 2. `Add -> WinFileSystem`.
-3. Establece la carpeta Data como la raíz del sistema: `pw/branches/r1117/Data`.
+3. Establece la carpeta Data como la raíz del sistema: `assets/`.
 4. Cierra las ventanas.
 5. En el editor: `Views -> Object Browser` y `Views -> Properties Editor`. Estos son los dos paneles principales para editar datos.
 
 Las pestañas del editor pueden moverse y anclarse.
 
 ## Cliente del juego con códigos de trucos
-En el repositorio puedes encontrar el cliente del juego ya compilado con códigos de trucos `pw_publish/branch/Client/PvP/Bin/PW_Game.exe`
+En el repositorio puedes encontrar el cliente del juego ya compilado con códigos de trucos `client/build/Bin/PW_Game.exe`
 
 Es necesario que las carpetas `Localization`, `Profiles` y `Data` se encuentren junto a la carpeta `Bin`. Por eso, durante la preparación debes moverlo a la carpeta `pw`. Si se modifica el código, será necesario recompilar el cliente.
 
