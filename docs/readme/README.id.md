@@ -5,28 +5,28 @@
 
 Permainan ini terdiri dari dua bagian: Kastil dan Pertempuran. Pemain berperan sebagai Lord atau Lady. Di Kastil, pemain membangun bangunan, merekrut Hero, dan memilih Talent untuk mereka. Pada bagian Pertempuran, pemain mengendalikan Hero dan menggunakan Talent untuk bertarung melawan pemain lain dalam pertempuran tim.
 
-Pada tahun 2024, kode sumber bagian Pertempuran dari game ini dirilis di bawah [lisensi khusus](LICENSE.md), yang melarang penggunaan komersial namun sepenuhnya terbuka bagi komunitas game, untuk studi, dan tujuan penelitian.
-Harap baca syarat [perjanjian lisensi](LICENSE.md) dengan seksama sebelum menggunakan.
+Pada tahun 2024, kode sumber bagian Pertempuran dari game ini dirilis di bawah [lisensi khusus](../../LICENSE.md), yang melarang penggunaan komersial namun sepenuhnya terbuka bagi komunitas game, untuk studi, dan tujuan penelitian.
+Harap baca syarat [perjanjian lisensi](../../LICENSE.md) dengan seksama sebelum menggunakan.
 
 ## Apa yang ada di repositori ini
 - `pw` — kode utama bagian pertempuran
-- `pw_publish` — klien bagian pertempuran yang sudah dikompilasi dengan kode curang dan editor klien
-- `pw/branches/r1117/Bin/PF_Editor.exe` — editor data game
+- `client/build (client), server/ (servers)` — klien bagian pertempuran yang sudah dikompilasi dengan kode curang dan editor klien
+- `editor/build/PF_Editor.exe` — editor data game
 
 ## Persiapan
 Anda perlu mengunduh data dari repositori ini dan menggabungkan folder `Bin` dengan data utama game. Berikut caranya:
 
-1. Salin folder `pw_publish/branch/Client/PvP/Bin` ke `pw/branches/r1117`, ganti file yang sudah ada.
-2. Jalankan klien dengan kode curang `pw/branches/r1117/Bin/PW_Game.exe`.
+1. Salin folder `client/build/Bin` ke `(legacy path, now split across engine/, client/, server/, editor/, assets/, localization/, profiles/, vendor/, tools/)`, ganti file yang sudah ada.
+2. Jalankan klien dengan kode curang `client/build/Bin/PW_Game.exe`.
 3. Jika berhasil, Anda akan melihat jendela loading, namun tanpa gambar dan layar hitam.
 4. Pada folder `Profiles -> game.cfg`, ubah nilai `local_game 0` menjadi `local_game 1`.
 5. Jalankan klien dengan kode curang. Sekarang Anda akan melihat lobi di mana Anda dapat memilih peta, hero, dan memulai pertempuran.
 6. Dalam game, tekan tombol Tilde (~) pada keyboard, dan Anda akan melihat konsol untuk memasukkan kode curang.
 
-Jika terjadi kesalahan, periksa file log di `pw/branches/r1117/Bin/logs`.
+Jika terjadi kesalahan, periksa file log di `logs/`.
 
 ## Data Game
-Data dapat diedit melalui editor dan terletak di `pw/branches/r1117/Data`
+Data dapat diedit melalui editor dan terletak di `assets/`
 
 Dengan mengedit data, Anda dapat:
 1. Mengubah deskripsi talent dan kemampuan hero.
@@ -40,19 +40,19 @@ Dengan mengedit data, Anda dapat:
 Ketika mengubah data, Anda tidak perlu membangun klien baru dari kode. Cukup tekan `File -> Save`, dan semua perubahan langsung muncul di klien game `PW_Game`. Sebagai contoh, Anda dapat mencoba mengubah deskripsi talent atau kemampuan hero tertentu.
 
 ## Editor Data Game
-Editor data game berada di `pw/branches/r1117/Bin/PF_Editor.exe`
+Editor data game berada di `editor/build/PF_Editor.exe`
 
 Saat pertama membuka editor, Anda perlu mengatur path ke `Data`:
 1. `Tools -> File System Configuration`.
 2. `Add -> WinFileSystem`.
-3. Atur folder Data sebagai system root: `pw/branches/r1117/Data`.
+3. Atur folder Data sebagai system root: `assets/`.
 4. Tutup jendela.
 5. Di editor: `Views -> Object Browser` dan `Views -> Properties Editor`. Ini adalah dua panel utama untuk mengedit data.
 
 Tab editor dapat dipindahkan dan ditempatkan sesuai keinginan.
 
 ## Klien Game dengan Kode Curang
-Di repositori, Anda dapat menemukan klien game yang sudah dikompilasi dengan kode curang `pw_publish/branch/Client/PvP/Bin/PW_Game.exe`
+Di repositori, Anda dapat menemukan klien game yang sudah dikompilasi dengan kode curang `client/build/Bin/PW_Game.exe`
 
 Anda harus memiliki folder `Localization`, `Profiles`, dan `Data` di samping folder `Bin`. Oleh karena itu, saat persiapan, perlu dipindahkan ke folder `pw`. Jika ada perubahan pada kode, klien harus dikompilasi ulang.
 

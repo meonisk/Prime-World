@@ -5,28 +5,28 @@
 
 O jogo consiste em duas partes: Castelo e Batalha. O jogador assume o papel de Lorde ou Lady. No Castelo, o jogador constrói edifícios, contrata Heróis e escolhe Talentos para eles. Na parte de Batalha, o jogador controla um Herói e, usando Talentos, luta contra outros jogadores em batalhas de equipe.
 
-Em 2024, o código-fonte da parte de Batalha do jogo foi disponibilizado sob uma [licença especial](LICENSE.md), proibindo o uso comercial, mas totalmente aberto para a comunidade de jogos, estudo e fins de pesquisa.
-Por favor, leia atentamente os termos do [acordo de licença](LICENSE.md) antes de utilizar.
+Em 2024, o código-fonte da parte de Batalha do jogo foi disponibilizado sob uma [licença especial](../../LICENSE.md), proibindo o uso comercial, mas totalmente aberto para a comunidade de jogos, estudo e fins de pesquisa.
+Por favor, leia atentamente os termos do [acordo de licença](../../LICENSE.md) antes de utilizar.
 
 ## O que está neste repositório
 - `pw` — código principal da parte de batalha
-- `pw_publish` — cliente compilado da parte de batalha com códigos de trapaça e editor para o cliente
-- `pw/branches/r1117/Bin/PF_Editor.exe` — editor de dados do jogo
+- `client/build (client), server/ (servers)` — cliente compilado da parte de batalha com códigos de trapaça e editor para o cliente
+- `editor/build/PF_Editor.exe` — editor de dados do jogo
 
 ## Preparação
 É necessário baixar os dados deste repositório e mesclar a pasta `Bin` com os dados principais do jogo. Veja como fazer isso:
 
-1. Copie a pasta `pw_publish/branch/Client/PvP/Bin` para `pw/branches/r1117`, substituindo os arquivos existentes.
-2. Execute o cliente com códigos de trapaça `pw/branches/r1117/Bin/PW_Game.exe`.
+1. Copie a pasta `client/build/Bin` para `(legacy path, now split across engine/, client/, server/, editor/, assets/, localization/, profiles/, vendor/, tools/)`, substituindo os arquivos existentes.
+2. Execute o cliente com códigos de trapaça `client/build/Bin/PW_Game.exe`.
 3. Se tudo estiver correto, você verá a janela de carregamento, mas sem imagem e apenas com a tela preta.
 4. Na pasta `Profiles -> game.cfg`, altere o valor de `local_game 0` para `local_game 1`.
 5. Execute o cliente com códigos de trapaça. Agora você deverá ver o lobby, onde poderá selecionar o mapa, herói e iniciar a batalha.
 6. No jogo, pressione a tecla Tilde (~) no teclado para abrir o console para digitar os códigos de trapaça.
 
-Se ocorrerem erros, verifique os arquivos de log em `pw/branches/r1117/Bin/logs`.
+Se ocorrerem erros, verifique os arquivos de log em `logs/`.
 
 ## Dados do Jogo
-Os dados podem ser editados pelo editor e estão localizados em `pw/branches/r1117/Data`
+Os dados podem ser editados pelo editor e estão localizados em `assets/`
 
 Ao editar os dados, você pode:
 1. Alterar descrições de talentos e habilidades dos heróis.
@@ -40,19 +40,19 @@ Ao editar os dados, você pode:
 Ao alterar os dados, não é necessário compilar um novo cliente a partir do código. Basta clicar em `File -> Save`, e todas as alterações aparecerão instantaneamente no cliente do jogo `PW_Game`. Como exemplo, você pode tentar alterar a descrição de algum talento ou habilidade de um herói.
 
 ## Editor de Dados do Jogo
-O editor de dados do jogo está localizado em `pw/branches/r1117/Bin/PF_Editor.exe`
+O editor de dados do jogo está localizado em `editor/build/PF_Editor.exe`
 
 Na primeira vez que abrir o editor, é preciso configurar o caminho para `Data`:
 1. `Tools -> File System Configuration`.
 2. `Add -> WinFileSystem`.
-3. Defina a pasta Data como o system root: `pw/branches/r1117/Data`.
+3. Defina a pasta Data como o system root: `assets/`.
 4. Feche as janelas.
 5. No editor: `Views -> Object Browser` e `Views -> Properties Editor`. Estes são os dois painéis principais para editar dados.
 
 As abas do editor podem ser movidas e fixadas.
 
 ## Cliente do Jogo com Códigos de Trapaça
-No repositório você pode encontrar o cliente do jogo já compilado com códigos de trapaça em `pw_publish/branch/Client/PvP/Bin/PW_Game.exe`
+No repositório você pode encontrar o cliente do jogo já compilado com códigos de trapaça em `client/build/Bin/PW_Game.exe`
 
 É necessário que as pastas `Localization`, `Profiles` e `Data` estejam próximas à pasta `Bin`. Portanto, durante a preparação, é preciso mover para a pasta `pw`. Se o código for alterado, será necessário recompilar o cliente.
 
