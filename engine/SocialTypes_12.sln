@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libdb.NET", "libdb.NET\libdb.NET.csproj", "{2369C873-8C70-4197-8CAB-67D34C9D5412}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libdb.NET", "libdb-net\libdb.NET.csproj", "{2369C873-8C70-4197-8CAB-67D34C9D5412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types", "Types\Types.csproj", "{2D99C064-8D94-402F-AFB8-19FC429DF5C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types", "types\Types.csproj", "{2D99C064-8D94-402F-AFB8-19FC429DF5C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types.DBTypes", "Types.DBTypes\Types.DBTypes.csproj", "{CB33BF48-712E-4EAB-8436-E64DC30CBCD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types.DBTypes", "types-db\Types.DBTypes.csproj", "{CB33BF48-712E-4EAB-8436-E64DC30CBCD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PF_Types", "PF_Types\PF_Types.csproj", "{8F47D4BB-33C0-4266-BB4C-AFEAFCF4BDE9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PF_Types", "pf-types\PF_Types.csproj", "{8F47D4BB-33C0-4266-BB4C-AFEAFCF4BDE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PF_Types.DBTypes", "PF_Types.DBTypes\PF_Types.DBTypes.csproj", "{66E75FE1-7475-4096-B532-F8F8C033FE9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PF_Types.DBTypes", "pf-types-db\PF_Types.DBTypes.csproj", "{66E75FE1-7475-4096-B532-F8F8C033FE9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialTypes", "SocialTypes\SocialTypes.csproj", "{711E9848-CEF5-417A-A9EE-FFBED3A58156}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialTypes", "social-types\SocialTypes.csproj", "{711E9848-CEF5-417A-A9EE-FFBED3A58156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialTypes.DBTypes", "SocialTypes.DBTypes\SocialTypes.DBTypes.csproj", "{E1B1F76B-5499-4725-AB2C-A2F76356D684}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialTypes.DBTypes", "social-types-db\SocialTypes.DBTypes.csproj", "{E1B1F76B-5499-4725-AB2C-A2F76356D684}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

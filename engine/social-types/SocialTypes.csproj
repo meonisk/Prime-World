@@ -77,15 +77,15 @@
     <Compile Include="SocialRoot.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\libdb.NET\libdb.NET.csproj">
+    <ProjectReference Include="..\libdb-net\libdb.NET.csproj">
       <Project>{2369c873-8c70-4197-8cab-67d34c9d5412}</Project>
       <Name>libdb.NET</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PF_Types\PF_Types.csproj">
+    <ProjectReference Include="..\pf-types\PF_Types.csproj">
       <Project>{8F47D4BB-33C0-4266-BB4C-AFEAFCF4BDE9}</Project>
       <Name>PF_Types</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Types\Types.csproj">
+    <ProjectReference Include="..\types\Types.csproj">
       <Project>{2D99C064-8D94-402F-AFB8-19FC429DF5C2}</Project>
       <Name>Types</Name>
     </ProjectReference>

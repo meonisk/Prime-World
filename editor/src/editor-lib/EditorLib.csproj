@@ -247,11 +247,11 @@
     <Compile Include="UndoRedo\FolderCreateOperation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\libdb.NET\libdb.NET.csproj">
+    <ProjectReference Include="..\libdb-net\libdb.NET.csproj">
       <Project>{2369C873-8C70-4197-8CAB-67D34C9D5412}</Project>
       <Name>libdb.NET</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Win32\Win32.csproj">
+    <ProjectReference Include="..\win32\Win32.csproj">
       <Project>{7398874F-AEA0-4A0E-8239-E3A6668A3712}</Project>
       <Name>Win32</Name>
     </ProjectReference>
@@ -319,7 +319,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Scripts\ScriptsPanel.resx">
+    <EmbeddedResource Include="scripts\ScriptsPanel.resx">
       <DependentUpon>ScriptsPanel.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -458,12 +458,12 @@
     <Compile Include="PropertiesEditor\States\StatesManagementForm.Designer.cs">
       <DependentUpon>StatesManagementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Scripts\ScriptMachine.cs" />
-    <Compile Include="Scripts\ScriptsConfig.cs" />
-    <Compile Include="Scripts\ScriptsPanel.cs">
+    <Compile Include="scripts\ScriptMachine.cs" />
+    <Compile Include="scripts\ScriptsConfig.cs" />
+    <Compile Include="scripts\ScriptsPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Scripts\ScriptsPanel.Designer.cs">
+    <Compile Include="scripts\ScriptsPanel.Designer.cs">
       <DependentUpon>ScriptsPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Templates\DefineTemplateForm.cs">
@@ -596,10 +596,10 @@
     <None Include="Resources\ElementEditable.png" />
     <None Include="Resources\ElementCollapse.png" />
     <None Include="Resources\ElementVisible.png" />
-    <None Include="Scripts\stop_script.png" />
-    <None Include="Scripts\run_script.png" />
-    <None Include="Scripts\remove_script.png" />
-    <None Include="Scripts\add_script.png" />
+    <None Include="scripts\stop_script.png" />
+    <None Include="scripts\run_script.png" />
+    <None Include="scripts\remove_script.png" />
+    <None Include="scripts\add_script.png" />
     <None Include="Resources\Lock.png" />
     <None Include="Resources\Outliner.png" />
     <None Include="Resources\Write.bmp" />

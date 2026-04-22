@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+﻿<?xml version="1.0" encoding="windows-1251"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
@@ -42,7 +42,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/MP"
 				Optimization="0"
-				AdditionalIncludeDirectories="../../../..;../../../../Server;../../../../Server/Chat"
+				AdditionalIncludeDirectories="../../../..;../../../../server;../../../../server/Chat"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="3"
@@ -114,7 +114,7 @@
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="../../../..;../../../../Server;../../../../Server/Chat"
+				AdditionalIncludeDirectories="../../../..;../../../../server;../../../../server/Chat"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				ExceptionHandling="0"
 				RuntimeLibrary="2"
@@ -185,7 +185,7 @@
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="../../../..;../../../../Server;../../../../Server/Chat"
+				AdditionalIncludeDirectories="../../../..;../../../../server;../../../../server/Chat"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_SHIPPING;"
 				ExceptionHandling="0"
 				RuntimeLibrary="2"
@@ -255,7 +255,7 @@
 				InlineFunctionExpansion="2"
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
-				AdditionalIncludeDirectories="../../../..;../../../../Server;../../../../Server/Chat"
+				AdditionalIncludeDirectories="../../../..;../../../../server;../../../../server/Chat"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_SHIPPING;STATIC_LIB"
 				ExceptionHandling="0"
 				RuntimeLibrary="2"
@@ -325,7 +325,7 @@
 				InlineFunctionExpansion="2"
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
-				AdditionalIncludeDirectories="../../../..;../../../../Server;../../../../Server/Chat"
+				AdditionalIncludeDirectories="../../../..;../../../../server;../../../../server/Chat"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;STATIC_LIB;_DO_ASSERT;STARFORCE_PROTECTED"
 				ExceptionHandling="0"
 				RuntimeLibrary="2"
@@ -377,7 +377,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\Server\Chat\ChatSvc\ChatClientIfaceCallback.h"
+				RelativePath="..\..\..\..\server\Chat\ChatSvc\ChatClientIfaceCallback.h"
 				>
 			</File>
 			<File
@@ -480,27 +480,27 @@
 				Name=".auto"
 				>
 				<File
-					RelativePath="..\..\..\..\Server\Chat\ChatSvc\LChatClientIfaceCallback.auto.cpp"
+					RelativePath="..\..\..\..\server\Chat\ChatSvc\LChatClientIfaceCallback.auto.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\..\..\Server\Chat\ChatSvc\LChatClientIfaceCallback.auto.h"
+					RelativePath="..\..\..\..\server\Chat\ChatSvc\LChatClientIfaceCallback.auto.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\..\..\Server\Chat\ChatSvc\LChatClientIfaceCallback.component"
+					RelativePath="..\..\..\..\server\Chat\ChatSvc\LChatClientIfaceCallback.component"
 					>
 				</File>
 				<File
-					RelativePath="..\..\..\..\Server\Chat\ChatSvc\RChatClientIface.auto.cpp"
+					RelativePath="..\..\..\..\server\Chat\ChatSvc\RChatClientIface.auto.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\..\..\..\Server\Chat\ChatSvc\RChatClientIface.auto.h"
+					RelativePath="..\..\..\..\server\Chat\ChatSvc\RChatClientIface.auto.h"
 					>
 				</File>
 				<File
-					RelativePath="..\..\..\..\Server\Chat\ChatSvc\RChatClientIface.component"
+					RelativePath="..\..\..\..\server\Chat\ChatSvc\RChatClientIface.component"
 					>
 				</File>
 			</Filter>

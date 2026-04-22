@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+﻿<?xml version="1.0" encoding="windows-1251"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
@@ -1022,43 +1022,43 @@
 			Name="ClientTransportSystem"
 			>
 			<File
-				RelativePath="..\..\Network\ClientTransportConfig.component"
+				RelativePath="..\..\network\ClientTransportConfig.component"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Network\ClientTransportConfig.cpp"
+				RelativePath="..\..\network\ClientTransportConfig.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Network\ClientTransportConfig.h"
+				RelativePath="..\..\network\ClientTransportConfig.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Network\ClientTransportSystem2.cpp"
+				RelativePath="..\..\network\ClientTransportSystem2.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Network\ClientTransportSystem2.h"
+				RelativePath="..\..\network\ClientTransportSystem2.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Network\ClientTransportSystem3.cpp"
+				RelativePath="..\..\network\ClientTransportSystem3.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Network\ClientTransportSystem3.h"
+				RelativePath="..\..\network\ClientTransportSystem3.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Network\ClientTransportSystemIntf.h"
+				RelativePath="..\..\network\ClientTransportSystemIntf.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Network\SecondaryRelayCtx.cpp"
+				RelativePath="..\..\network\SecondaryRelayCtx.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Network\SecondaryRelayCtx.h"
+				RelativePath="..\..\network\SecondaryRelayCtx.h"
 				>
 			</File>
 		</Filter>

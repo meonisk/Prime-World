@@ -75,17 +75,17 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference
-			Include="..\libdb.NET\libdb.NET.csproj">
+			Include="..\libdb-net\libdb.NET.csproj">
 			<Project>{2369C873-8C70-4197-8CAB-67D34C9D5412}</Project>
 			<Name>libdb.NET</Name>
 		</ProjectReference>
 		<ProjectReference
-			Include="..\PF_Types.DBTypes\PF_Types.DBTypes.csproj">
+			Include="..\pf-types-db\PF_Types.DBTypes.csproj">
 			<Project>{66E75FE1-7475-4096-B532-F8F8C033FE9A}</Project>
 			<Name>PF_Types.DBTypes</Name>
 		</ProjectReference>
 		<ProjectReference
-			Include="..\Types.DBTypes\Types.DBTypes.csproj">
+			Include="..\types-db\Types.DBTypes.csproj">
 			<Project>{CB33BF48-712E-4EAB-8436-E64DC30CBCD7}</Project>
 			<Name>Types.DBTypes</Name>
 		</ProjectReference>
@@ -120,6 +120,6 @@
   </Target>
   -->
 	<PropertyGroup>
-		<PreBuildEvent>$(ProjectDir)..\..\Vendor\BuildUtils\DBCodeGen.exe $(ProjectDir)..\SocialTypes\SocialTypes.csproj "--solution=$(ProjectDir)..\PF.sln" --project=$(ProjectName) --target=cs</PreBuildEvent>
+		<PreBuildEvent>$(ProjectDir)..\..\Vendor\BuildUtils\DBCodeGen.exe $(ProjectDir)..\social-types\SocialTypes.csproj "--solution=$(ProjectDir)..\PF.sln" --project=$(ProjectName) --target=cs</PreBuildEvent>
 	</PropertyGroup>
 </Project>

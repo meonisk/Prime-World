@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{1B4FA198-38F7-4DE2-ADB1-017C38141844}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "server\Server.csproj", "{1B4FA198-38F7-4DE2-ADB1-017C38141844}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

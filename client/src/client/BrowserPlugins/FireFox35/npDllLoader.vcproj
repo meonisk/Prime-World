@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+﻿<?xml version="1.0" encoding="windows-1251"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
@@ -176,47 +176,47 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\..\..\System\Basic.cpp"
+				RelativePath="..\..\..\system\Basic.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\Basic.h"
+				RelativePath="..\..\..\system\Basic.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\Commands.cpp"
+				RelativePath="..\..\..\system\Commands.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\DebugVar.cpp"
+				RelativePath="..\..\..\system\DebugVar.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\Dumper.cpp"
+				RelativePath="..\..\..\system\Dumper.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\FilePath.cpp"
+				RelativePath="..\..\..\system\FilePath.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\FileStream_win.cpp"
+				RelativePath="..\..\..\system\FileStream_win.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\FileUtils.cpp"
+				RelativePath="..\..\..\system\FileUtils.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\FileUtils_win.cpp"
+				RelativePath="..\..\..\system\FileUtils_win.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\HPTimer.cpp"
+				RelativePath="..\..\..\system\HPTimer.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\HPTimer_win.cpp"
+				RelativePath="..\..\..\system\HPTimer_win.cpp"
 				>
 			</File>
 			<File
@@ -224,15 +224,15 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\Logger.cpp"
+				RelativePath="..\..\..\system\Logger.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\LoggerBuffer.cpp"
+				RelativePath="..\..\..\system\LoggerBuffer.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\LogHelpers.cpp"
+				RelativePath="..\..\..\system\LogHelpers.cpp"
 				>
 			</File>
 			<File
@@ -248,7 +248,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\ObjectFactory.cpp"
+				RelativePath="..\..\..\system\ObjectFactory.cpp"
 				>
 			</File>
 			<File
@@ -256,39 +256,39 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\StrConvert.cpp"
+				RelativePath="..\..\..\system\StrConvert.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\Stream.cpp"
+				RelativePath="..\..\..\system\Stream.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\StrFormatter.cpp"
+				RelativePath="..\..\..\system\StrFormatter.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\StrProc.cpp"
+				RelativePath="..\..\..\system\StrProc.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\StrUtils_win.cpp"
+				RelativePath="..\..\..\system\StrUtils_win.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\SystemLog.cpp"
+				RelativePath="..\..\..\system\SystemLog.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\ThreadLocal.cpp"
+				RelativePath="..\..\..\system\ThreadLocal.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\Minizip\unzip.c"
+				RelativePath="..\..\..\system\Minizip\unzip.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\ZipFileSystem.h"
+				RelativePath="..\..\..\system\ZipFileSystem.h"
 				>
 			</File>
 		</Filter>
@@ -306,7 +306,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\System\Minizip\unzip.h"
+				RelativePath="..\..\..\system\Minizip\unzip.h"
 				>
 			</File>
 		</Filter>

@@ -453,7 +453,7 @@
 		/>
 		<ProjectReference
 			ReferencedProjectIdentifier="{2369C873-8C70-4197-8CAB-67D34C9D5412}"
-			RelativePathToProject=".\libdb.NET\libdb.NET.csproj"
+			RelativePathToProject=".\libdb-net\libdb.NET.csproj"
 		/>
 		<AssemblyReference
 			RelativePath="System.Drawing.dll"
@@ -462,7 +462,7 @@
 		/>
 		<ProjectReference
 			ReferencedProjectIdentifier="{CB33BF48-712E-4EAB-8436-E64DC30CBCD7}"
-			RelativePathToProject=".\Types.DBTypes\Types.DBTypes.csproj"
+			RelativePathToProject=".\types-db\Types.DBTypes.csproj"
 		/>
 	</References>
 	<Files>
