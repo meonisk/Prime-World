@@ -1,6 +1,6 @@
-[English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
+[English](README.md)        [Русский](docs/readme/README.ru.md)        [中文](docs/readme/README.zh.md)        [हिन्दी](docs/readme/README.hi.md)        [Español](docs/readme/README.es.md)        [Français](docs/readme/README.fr.md)        [Deutsch](docs/readme/README.de.md)        [Português](docs/readme/README.pt.md)        [日本語](docs/readme/README.ja.md)        [Bahasa Indonesia](docs/readme/README.id.md)
 
-[![Prime World Trailer](PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
+[![Prime World Trailer](docs/PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
 [Prime World](https://wikipedia.org/wiki/Prime_World) is a multiplayer online battle arena (MOBA) game released in 2014. The game was developed on an in-house game engine by the company [Nival](http://nival.com/), primarily written in C++.
 
 The game consists of two parts: Castle and Battle part. The player takes on the role of a Lord or Lady. In the Castle, the player constructs buildings, hires Heroes, and chooses Talents for them. In the Battle part, the player controls a Hero and uses Talents to fight against other players in team battles.

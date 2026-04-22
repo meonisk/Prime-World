@@ -1,6 +1,6 @@
-[English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
+[English](../../README.md)        [Русский](README.ru.md)        [中文](README.zh.md)        [हिन्दी](README.hi.md)        [Español](README.es.md)        [Français](README.fr.md)        [Deutsch](README.de.md)        [Português](README.pt.md)        [日本語](README.ja.md)        [Bahasa Indonesia](README.id.md)
 
-[![Prime World Trailer](PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
+[![Prime World Trailer](../PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
 [Prime World](https://wikipedia.org/wiki/Prime_World) 是一款多人在线战斗竞技场（MOBA）游戏，于2014年发布。该游戏由公司 [Nival](http://nival.com/) 基于自研游戏引擎开发，主要使用 C++ 编写。
 
 游戏由两部分组成：城堡部分和战斗部分。玩家扮演领主或女领主的角色。在城堡中，玩家建造建筑、雇佣英雄并为其选择天赋。在战斗部分，玩家操控英雄，并利用天赋与其他玩家进行团队对抗。

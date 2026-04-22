@@ -1,6 +1,6 @@
-[English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
+[English](../../README.md)        [Русский](README.ru.md)        [中文](README.zh.md)        [हिन्दी](README.hi.md)        [Español](README.es.md)        [Français](README.fr.md)        [Deutsch](README.de.md)        [Português](README.pt.md)        [日本語](README.ja.md)        [Bahasa Indonesia](README.id.md)
 
-[![Prime World Trailer](PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
+[![Prime World Trailer](../PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
 [Prime World](https://wikipedia.org/wiki/Prime_World)は、2014年にリリースされたマルチプレイヤーオンラインバトルアリーナ（MOBA）ゲームです。このゲームは[Nival](http://nival.com/)社の自社製ゲームエンジン上で開発され、主にC++で書かれています。
 
 ゲームは「キャッスル」と「バトルパート」の2つの部分から構成されています。プレイヤーはロードまたはレディとしてプレイします。キャッスルでは、プレイヤーは建物を建設し、ヒーローを雇い、各ヒーローのためにタレントを選びます。バトルパートでは、プレイヤーはヒーローを操作し、タレントを使って他のプレイヤーとチーム戦を行います。

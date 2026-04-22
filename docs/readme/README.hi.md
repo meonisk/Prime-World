@@ -1,6 +1,6 @@
-[English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
+[English](../../README.md)        [Русский](README.ru.md)        [中文](README.zh.md)        [हिन्दी](README.hi.md)        [Español](README.es.md)        [Français](README.fr.md)        [Deutsch](README.de.md)        [Português](README.pt.md)        [日本語](README.ja.md)        [Bahasa Indonesia](README.id.md)
 
-[![Prime World Trailer](PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
+[![Prime World Trailer](../PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
 [Prime World](https://wikipedia.org/wiki/Prime_World) एक मल्टीप्लेयर ऑनलाइन बैटल एरीना (MOBA) गेम है, जिसे 2014 में रिलीज़ किया गया था। इस गेम को कंपनी [Nival](http://nival.com/) द्वारा घरेलू गेम इंजन पर विकसित किया गया था, जो मुख्य रूप से C++ में लिखा गया है।
 
 खेल दो हिस्सों में बँटा है: कैसल और बैटल पार्ट। खिलाड़ी लॉर्ड या लेडी की भूमिका निभाता है। कैसल में खिलाड़ी इमारतें बनाता है, हीरोज़ को हायर करता है और उनके लिए टैलेंट्स चुनता है। बैटल हिस्से में खिलाड़ी एक हीरो को नियंत्रित करता है और टैलेंट्स का प्रयोग करके अन्य खिलाड़ियों की टीम के खिलाफ लड़ता है।

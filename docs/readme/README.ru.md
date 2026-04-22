@@ -1,6 +1,6 @@
-[English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
+[English](../../README.md)        [Русский](README.ru.md)        [中文](README.zh.md)        [हिन्दी](README.hi.md)        [Español](README.es.md)        [Français](README.fr.md)        [Deutsch](README.de.md)        [Português](README.pt.md)        [日本語](README.ja.md)        [Bahasa Indonesia](README.id.md)
 
-[![Prime World Trailer](PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
+[![Prime World Trailer](../PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
 [Prime World](https://wikipedia.org/wiki/Prime_World) это многопользовательская онлайн-игра в жанре боевой арены (MOBA), выпущенная в 2014 году. Игра была создана на внутреннем игровом движке компании [Nival](http://nival.com/), написанном, в основном, на C++.
 
 Игра состоит из двух частей: Замок и Боевая часть. Игрок выступает в роли Лорда или Леди. В Замке игрок строит здания, нанимает Героев и выбирает для них Таланты. В Боевой части игрок управляет Героем и, используя Таланты, сражается с другими игроками команда на команду.
