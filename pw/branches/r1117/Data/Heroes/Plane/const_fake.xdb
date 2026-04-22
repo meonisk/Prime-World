@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<UnitConstant>
-	<name>fake</name>
-	<var>
-		<compiledString></compiledString>
-		<returnType>float</returnType>
-		<sString>0.0f</sString>
-	</var>
-</UnitConstant>

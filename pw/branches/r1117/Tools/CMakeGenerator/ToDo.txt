@@ -1,5 +1,0 @@
-+ linker keys
-+ поддержка уникальных имен компонентов
-+ генерация cmakelists.txt в отдельную папку    
-- precompiled headers
-- local compiler keys

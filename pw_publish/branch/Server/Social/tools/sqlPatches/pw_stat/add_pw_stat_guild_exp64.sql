@@ -1,1 +1,0 @@
-ALTER TABLE `pw_stat`.`tbl_guild_rating` MODIFY COLUMN `guild_exp` BIGINT NOT NULL DEFAULT 0;

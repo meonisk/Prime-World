@@ -1,3 +1,0 @@
-sources = { '' : ['file1.cpp','file2.cpp','file3.cpp'] }
-inlined = False
-type = 'lib'

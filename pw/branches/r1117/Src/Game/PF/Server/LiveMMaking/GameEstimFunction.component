@@ -1,8 +1,0 @@
-sources = [
-  'GameEstimFunction.h',
-  'GameEstimFunction.cpp',
-]
-
-components = [ 
-  'Server/LiveMMaking/MMakingUtils',
-]

@@ -1,4 +1,0 @@
-.def
-.obj
-.pch
-.ilk

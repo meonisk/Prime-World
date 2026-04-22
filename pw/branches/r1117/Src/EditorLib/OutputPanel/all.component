@@ -1,6 +1,0 @@
-sources = [
-    'OutputPanel.Designer.cs',
-    'OutputPanel.cs',
-    'OutputPanelConfig.cs',
-    'OutputTraceListener.cs',
-    ]

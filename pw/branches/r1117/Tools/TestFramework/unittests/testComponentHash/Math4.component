@@ -1,3 +1,0 @@
-sources = ['Program.cs']
-inlined = False
-components = [ 'Dependence' ]

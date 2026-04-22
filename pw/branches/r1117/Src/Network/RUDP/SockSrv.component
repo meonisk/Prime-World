@@ -1,9 +1,0 @@
-sources = [
-  'ISockSrv.h',
-]
-
-components = [ 
-  'Vendor/Libc',
-  'System/Pointers',
-  'Network/RUDP/UdpSocket',
-]

@@ -1,1 +1,0 @@
-ALTER TABLE `pw_stat`.`tbl_user_profile` ADD COLUMN `currency` varchar(255) NOT NULL AFTER `resource3`;

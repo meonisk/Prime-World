@@ -1,1 +1,0 @@
-start river.bot.exe --connect

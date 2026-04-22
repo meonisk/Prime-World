@@ -1,7 +1,0 @@
-sources = [
-  'SocialLobbyGuildFightCalc.h',
-]
-
-components = [ 
-  'Server/LobbySocial/SocialLobbyTypes',
-]

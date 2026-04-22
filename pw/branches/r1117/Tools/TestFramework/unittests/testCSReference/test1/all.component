@@ -1,3 +1,0 @@
-sources = [ 'test.cs' ]
-inlined = False
-libDependencies = ['System.Xml']

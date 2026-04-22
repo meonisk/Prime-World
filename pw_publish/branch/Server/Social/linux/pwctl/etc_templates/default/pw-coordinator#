@@ -1,5 +1,0 @@
-# Limit setting
-ulimit -n 128000
-USER="pwcastle"
-RUNDIR="/var/www/SocialServer/bin"
-

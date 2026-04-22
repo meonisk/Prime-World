@@ -1,1 +1,0 @@
-call makecab.bat D:\Projects\pf\Src\_Debug\nivalhostctrl.dll

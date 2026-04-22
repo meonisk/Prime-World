@@ -1,4 +1,0 @@
-sources = [
-    'EditorPanel.cs',
-    'PanelsManager.cs',
-    ]

@@ -1,8 +1,0 @@
-sources = [
-    'IDGenerator.cpp',
-    'IDGenerator.h',
-]
-
-components = [ 
-    'System/NSTL'
-]

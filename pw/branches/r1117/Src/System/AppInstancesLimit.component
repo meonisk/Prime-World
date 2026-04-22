@@ -1,9 +1,0 @@
-sources =  [
-    'AppInstancesLimit.cpp',
-    'AppInstancesLimit.h',
-]
-
-components = [ 
-    'Vendor/Libc',
-    'System/StrUtils', 
-]

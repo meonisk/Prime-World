@@ -1,7 +1,0 @@
-sources = [
-    'Executor.OperationContext.cs',
-    'Executor.cs',
-    'NoThreadExecutor.cs',
-    'OperationContext.cs',
-    'SingleThreadExecutor.cs',
-    ]

@@ -1,8 +1,0 @@
-sources =  [
-    'StarForce.cpp',
-    'StarForce.h',
-]
-
-components = [ 
-    'Vendor/Libc',
-]

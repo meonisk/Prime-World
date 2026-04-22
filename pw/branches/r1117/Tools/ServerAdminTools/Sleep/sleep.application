@@ -1,8 +1,0 @@
-sources = [
-  'sleep.cpp',
-]
-
-
-components = [ 
-  'Vendor/Libc',
-]

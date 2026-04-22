@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<UnitConstant>
-	<name>G481_Damage</name>
-	<var>
-		<compiledString>FQAAAAABAAAABQAAAFWL7NkFCwAAAF3DAABIQw==</compiledString>
-		<returnType>float</returnType>
-		<sString>200</sString>
-	</var>
-</UnitConstant>

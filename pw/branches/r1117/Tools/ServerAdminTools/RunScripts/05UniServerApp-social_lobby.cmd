@@ -1,1 +1,0 @@
-start UniServerApp-social_lobby.exe social_lobby

@@ -1,8 +1,0 @@
-sources = [
-	'EventAccumulator.h',
-]
-
-components = [
-  'Vendor/Libc',
-  'System/CyclicBuffer',
-]

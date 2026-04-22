@@ -1,8 +1,0 @@
-TestSuite1.testNumber1
-TestSuite1.testNumber2
-TestSuite1.testNumber3
-TestSuite1.testNumber4
-TestSuite2.testNumber10
-TestSuite2.testNumber20
-TestSuite2.testNumber30
-TestSuite2.testNumber40

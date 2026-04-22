@@ -1,3 +1,0 @@
-builders = [ CodeGen( ['Foundation.cs','Render.cs'], 'cpp' ) ]
-inlined = False
-type = 'dll'

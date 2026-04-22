@@ -1,1 +1,0 @@
-ALTER TABLE `pw_stat`.`tbl_user_profile` ADD COLUMN `shard` INTEGER NOT NULL DEFAULT 0 AFTER `resource3`;

@@ -1,2 +1,0 @@
-#define SCALE 2
-#include "ApplyAlpha.psh"

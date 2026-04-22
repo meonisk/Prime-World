@@ -1,7 +1,0 @@
-sources = [
-]
-
-
-components = [
-  'Server/LiveMMaking/ProdMMLogicBase',
-]

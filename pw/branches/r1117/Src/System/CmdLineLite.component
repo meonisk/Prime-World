@@ -1,8 +1,0 @@
-sources = [
-  'CmdLineLite.h',
-  'CmdLineLite.cpp',
-]
-components = [
-  'System/StrUtils',
-  'Vendor/Libc',
-]

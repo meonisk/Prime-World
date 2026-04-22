@@ -1,3 +1,0 @@
-Maps
--*.xdb
--*.txt

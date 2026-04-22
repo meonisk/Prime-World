@@ -1,1 +1,0 @@
-include "text/all.as"

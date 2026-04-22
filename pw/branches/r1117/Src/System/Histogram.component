@@ -1,9 +1,0 @@
-sources = [
-  'Histogram.cpp',
-  'Histogram.h',
-]
-
-components = [
-  'Vendor/Libc',
-  'System/DarkSide',
-]

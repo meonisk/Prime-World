@@ -1,8 +1,0 @@
-sources = [
-    'AwardsRoll.h',
-    'AwardsRoll.cpp',
-]
-
-components = [
-    'Vendor/Libc',
-]

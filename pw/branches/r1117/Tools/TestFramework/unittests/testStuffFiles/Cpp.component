@@ -1,2 +1,0 @@
-sources = [ 'main.cpp', 'csmain.cs' ]
-projectType = 'win32'

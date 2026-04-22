@@ -1,8 +1,0 @@
-sources = [ 
-  'ServerCfg.cpp',
-  'ServerCfg.h',
-] 
-
-components = [
-  'System/ConfigFiles',
-]

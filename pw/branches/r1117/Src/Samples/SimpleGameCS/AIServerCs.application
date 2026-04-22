@@ -1,4 +1,0 @@
-sources = [ 
-  'AIServerCs.cs',
-]
-components = [ 'Server/RPC/ManagedRPC' ]
