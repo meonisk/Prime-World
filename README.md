@@ -17,7 +17,7 @@ The repository is organised by domain. Top-level layout:
 | `client/` | Client C++ sources (`client/src`), pre-built client (`client/build`), Flash UI (`client/flash-ui`), auto-updater (`client/launcher`) |
 | `server/` | Battle server (`server/battle`), social backend (`server/social`), aggregator (`server/socagr`), cluster control-center (`server/control-center`) |
 | `engine/` | Shared C++ game engine: `core`, `render`, `scene`, `sound`, `network`, `ui`, `terrain`, `system`, `game`, `types`, `scripts`, plus the top-level `PF.sln`, `SocialTypes_12.sln`, `CMakeLists.txt` and version resources |
-| `editor/` | Game data editor — `editor/src` (C#/C++ sources) and `editor/build` (`PF_Editor.exe`) |
+| `editor/` | Game data editor — `editor/src` (C#/C++ sources). The pre-built `PF_Editor.exe` ships with the client at `client/build/Bin/PF_Editor.exe`. |
 | `tools/` | Developer tools: `mesh-converter`, `shader-compiler`, `maya-*`, plus the original operations tools (Censor, TestFramework, Billing, InnoTest, GMTools, ...) |
 | `assets/` | Runtime game data the engine loads: `heroes`, `creeps`, `buildings`, `items`, `maps`, `effects`, `ui`, `audio`, `shaders`, `gfx-textures`, ... |
 | `assets-source/` | Pre-compiled source art: `styles`, `icons`, `screens`, `cursors`, `textures-default` — PNG sources that compile to `assets/ui/...` DDS files |
@@ -27,7 +27,7 @@ The repository is organised by domain. Top-level layout:
 | `archive/` | Legacy or deprecated content kept for reference: `server-old`, `pf-server-cmds-old`, `deprecated-shaders`, historical crash dumps |
 | `docs/` | Documentation: [REPO_STRUCTURE.md](docs/REPO_STRUCTURE.md), translated READMEs, licence PDFs, art tech specs |
 
-The game data editor lives at `editor/build/PF_Editor.exe`.
+The game data editor lives at `client/build/Bin/PF_Editor.exe` (shipped alongside the client).
 The pre-built battle client lives at `client/build/Bin/PW_Game.exe`.
 The pre-built battle server lives at `server/battle/build/`.
 
@@ -66,7 +66,7 @@ By editing the data, you can:
 When altering data, there's no need to build a new client from the code. Just press `File -> Save`, and all changes will instantly appear in the `PW_Game` game client. As an example, you might try altering the description of a specific talent or hero ability.
 
 ## Game Data Editor
-The game data editor is located at `editor/build/PF_Editor.exe`.
+The game data editor is located at `client/build/Bin/PF_Editor.exe` (shipped together with the game client).
 
 Upon first opening the editor, you need to configure the path to the game data:
 1. `Tools -> File System Configuration`.

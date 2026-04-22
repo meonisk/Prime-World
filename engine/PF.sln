@@ -349,7 +349,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Network", "network\Network.
 		{18EC1173-935F-40E5-BB18-0D21B2A63619} = {18EC1173-935F-40E5-BB18-0D21B2A63619}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RemoteObjects", "..\server\battle\src\RPC\RPC.vcproj", "{0DAC515E-1128-4565-832A-624E57463B49}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RemoteObjects", "..\server\battle\src\Server\RPC\RPC.vcproj", "{0DAC515E-1128-4565-832A-624E57463B49}"
 	ProjectSection(ProjectDependencies) = postProject
 		{39AE0307-9E9E-4A5E-B962-25DE686C7CC2} = {39AE0307-9E9E-4A5E-B962-25DE686C7CC2}
 		{BC01B534-E662-4003-A0EB-7828B82CD38F} = {BC01B534-E662-4003-A0EB-7828B82CD38F}
@@ -365,12 +365,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MayaExeInteraction", "..\to
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetworkAIO", "NetworkAIO", "{1FFAA9C9-1AB3-49B6-A877-059D0181AFEB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "naio", "..\server\battle\src\NetworkAIO\naio.vcproj", "{4B97F5CD-5D62-4EAB-92D3-38264DB96194}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "naio", "..\server\battle\src\Server\NetworkAIO\naio.vcproj", "{4B97F5CD-5D62-4EAB-92D3-38264DB96194}"
 	ProjectSection(ProjectDependencies) = postProject
 		{18EC1173-935F-40E5-BB18-0D21B2A63619} = {18EC1173-935F-40E5-BB18-0D21B2A63619}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "transport", "..\server\battle\src\NetworkAIO\transport.vcproj", "{D6B33528-7B40-44DC-8BD8-2BFD3E30062C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "transport", "..\server\battle\src\Server\NetworkAIO\transport.vcproj", "{D6B33528-7B40-44DC-8BD8-2BFD3E30062C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{39AE0307-9E9E-4A5E-B962-25DE686C7CC2} = {39AE0307-9E9E-4A5E-B962-25DE686C7CC2}
 		{73278B6A-A362-4F53-B380-EFCDAFC33193} = {73278B6A-A362-4F53-B380-EFCDAFC33193}
@@ -391,18 +391,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialTypes.DBTypes", "soci
 		{711E9848-CEF5-417A-A9EE-FFBED3A58156} = {711E9848-CEF5-417A-A9EE-FFBED3A58156}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mballocator", "..\server\battle\src\NetworkAIO\mballocator.vcproj", "{73278B6A-A362-4F53-B380-EFCDAFC33193}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mballocator", "..\server\battle\src\Server\NetworkAIO\mballocator.vcproj", "{73278B6A-A362-4F53-B380-EFCDAFC33193}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PW_MiniLauncher", "..\client\src\pw-mini-launcher\PW_MiniLauncher.csproj", "{65D33A46-B56F-462D-B6F3-798A5B7BB3A2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameChatClient", "game\PF\client\GameChatClient\GameChatClient.vcproj", "{E4C5717E-0A6E-4080-BC83-0847AAC2A716}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameChatClient", "game\PF\Client\GameChatClient\GameChatClient.vcproj", "{E4C5717E-0A6E-4080-BC83-0847AAC2A716}"
 	ProjectSection(ProjectDependencies) = postProject
 		{39AE0307-9E9E-4A5E-B962-25DE686C7CC2} = {39AE0307-9E9E-4A5E-B962-25DE686C7CC2}
 		{0DAC515E-1128-4565-832A-624E57463B49} = {0DAC515E-1128-4565-832A-624E57463B49}
 		{18EC1173-935F-40E5-BB18-0D21B2A63619} = {18EC1173-935F-40E5-BB18-0D21B2A63619}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RpcBase", "..\server\battle\src\RPC\RpcBase.vcproj", "{BC01B534-E662-4003-A0EB-7828B82CD38F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RpcBase", "..\server\battle\src\Server\RPC\RpcBase.vcproj", "{BC01B534-E662-4003-A0EB-7828B82CD38F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{39AE0307-9E9E-4A5E-B962-25DE686C7CC2} = {39AE0307-9E9E-4A5E-B962-25DE686C7CC2}
 		{18EC1173-935F-40E5-BB18-0D21B2A63619} = {18EC1173-935F-40E5-BB18-0D21B2A63619}
