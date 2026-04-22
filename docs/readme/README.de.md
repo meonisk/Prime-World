@@ -1,6 +1,6 @@
-[English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
+[English](../../README.md)        [Русский](README.ru.md)        [中文](README.zh.md)        [हिन्दी](README.hi.md)        [Español](README.es.md)        [Français](README.fr.md)        [Deutsch](README.de.md)        [Português](README.pt.md)        [日本語](README.ja.md)        [Bahasa Indonesia](README.id.md)
 
-[![Prime World Trailer](PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
+[![Prime World Trailer](../PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
 [Prime World](https://wikipedia.org/wiki/Prime_World) ist ein Mehrspieler-Online-Battle-Arena-Spiel (MOBA), das 2014 veröffentlicht wurde. Das Spiel wurde mit einer firmeneigenen Engine von [Nival](http://nival.com/) entwickelt und hauptsächlich in C++ geschrieben.
 
 Das Spiel besteht aus zwei Teilen: Schloss und Kampfteil. Der Spieler übernimmt die Rolle eines Lords oder einer Lady. Im Schloss baut der Spieler Gebäude, rekrutiert Helden und wählt Talente für sie aus. Im Kampfteil steuert der Spieler einen Helden und kämpft mithilfe von Talenten gegen andere Spieler in Team-Schlachten.

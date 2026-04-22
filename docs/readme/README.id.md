@@ -1,6 +1,6 @@
-[English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
+[English](../../README.md)        [Русский](README.ru.md)        [中文](README.zh.md)        [हिन्दी](README.hi.md)        [Español](README.es.md)        [Français](README.fr.md)        [Deutsch](README.de.md)        [Português](README.pt.md)        [日本語](README.ja.md)        [Bahasa Indonesia](README.id.md)
 
-[![Prime World Trailer](PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
+[![Prime World Trailer](../PW_trailer.png)](https://youtu.be/Fkd-zva4npI)
 [Prime World](https://wikipedia.org/wiki/Prime_World) adalah permainan multiplayer online battle arena (MOBA) yang dirilis pada tahun 2014. Game ini dikembangkan menggunakan game engine internal oleh perusahaan [Nival](http://nival.com/), yang sebagian besar ditulis dalam bahasa C++.
 
 Permainan ini terdiri dari dua bagian: Kastil dan Pertempuran. Pemain berperan sebagai Lord atau Lady. Di Kastil, pemain membangun bangunan, merekrut Hero, dan memilih Talent untuk mereka. Pada bagian Pertempuran, pemain mengendalikan Hero dan menggunakan Talent untuk bertarung melawan pemain lain dalam pertempuran tim.
