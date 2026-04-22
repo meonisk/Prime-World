@@ -126,11 +126,11 @@
     <Compile Include="SocialClient\DBSocialHeroes.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\libdb.NET\libdb.NET.csproj">
+    <ProjectReference Include="..\libdb-net\libdb.NET.csproj">
       <Project>{2369C873-8C70-4197-8CAB-67D34C9D5412}</Project>
       <Name>libdb.NET</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Types\Types.csproj">
+    <ProjectReference Include="..\types\Types.csproj">
       <Project>{2D99C064-8D94-402F-AFB8-19FC429DF5C2}</Project>
       <Name>Types</Name>
     </ProjectReference>

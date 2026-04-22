@@ -139,39 +139,39 @@
     <Compile Include="Extensions\TransparentImporters.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EditorLib\EditorLib.csproj">
+    <ProjectReference Include="..\editor-lib\EditorLib.csproj">
       <Project>{AEB9B15A-6C51-4B9B-8838-7254064A4E98}</Project>
       <Name>EditorLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EditorNative\EditorNative.vcproj">
+    <ProjectReference Include="..\editor-native\EditorNative.vcproj">
       <Project>{8661805A-1298-4D53-8666-1FB9922886AF}</Project>
       <Name>EditorNative</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EditorPlugins\EditorPlugins.csproj">
+    <ProjectReference Include="..\editor-plugins\EditorPlugins.csproj">
       <Project>{2521247A-CE57-4FAA-BBF0-3158313680F0}</Project>
       <Name>EditorPlugins</Name>
     </ProjectReference>
-    <ProjectReference Include="..\libdb.NET\libdb.NET.csproj">
+    <ProjectReference Include="..\libdb-net\libdb.NET.csproj">
       <Project>{2369C873-8C70-4197-8CAB-67D34C9D5412}</Project>
       <Name>libdb.NET</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MayaExeInteraction\MayaExeInteraction.csproj">
+    <ProjectReference Include="..\maya-exe-interaction\MayaExeInteraction.csproj">
       <Project>{5DFA0790-582A-4A71-93AE-A5D31AA7864F}</Project>
       <Name>MayaExeInteraction</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PF_EditorNative\PF_EditorNative.vcproj">
+    <ProjectReference Include="..\pf-editor-native\PF_EditorNative.vcproj">
       <Project>{8661805A-1298-4D53-8666-1FB9922886AE}</Project>
       <Name>PF_EditorNative</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PF_Types.DBTypes\PF_Types.DBTypes.csproj">
+    <ProjectReference Include="..\pf-types-db\PF_Types.DBTypes.csproj">
       <Project>{66E75FE1-7475-4096-B532-F8F8C033FE9A}</Project>
       <Name>PF_Types.DBTypes</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SocialTypes.DBTypes\SocialTypes.DBTypes.csproj">
+    <ProjectReference Include="..\social-types-db\SocialTypes.DBTypes.csproj">
       <Project>{E1B1F76B-5499-4725-AB2C-A2F76356D684}</Project>
       <Name>SocialTypes.DBTypes</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Types.DBTypes\Types.DBTypes.csproj">
+    <ProjectReference Include="..\types-db\Types.DBTypes.csproj">
       <Project>{CB33BF48-712E-4EAB-8436-E64DC30CBCD7}</Project>
       <Name>Types.DBTypes</Name>
     </ProjectReference>

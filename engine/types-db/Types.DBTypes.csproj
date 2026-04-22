@@ -73,7 +73,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\libdb.NET\libdb.NET.csproj">
+    <ProjectReference Include="..\libdb-net\libdb.NET.csproj">
       <Project>{2369C873-8C70-4197-8CAB-67D34C9D5412}</Project>
       <Name>libdb.NET</Name>
     </ProjectReference>
@@ -102,7 +102,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>$(ProjectDir)..\..\Vendor\BuildUtils\DBCodeGen.exe $(ProjectDir)..\Types\Types.csproj "--solution=$(ProjectDir)..\PF.sln" --project=$(ProjectName) --target=cs</PreBuildEvent>
+    <PreBuildEvent>$(ProjectDir)..\..\Vendor\BuildUtils\DBCodeGen.exe $(ProjectDir)..\types\Types.csproj "--solution=$(ProjectDir)..\PF.sln" --project=$(ProjectName) --target=cs</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

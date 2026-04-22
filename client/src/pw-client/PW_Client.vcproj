@@ -42,7 +42,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/MP"
 				Optimization="0"
-				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../Server\;../Game\PF\;../../vendor/DirectShow/Include;../Server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../Server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
+				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../server\;../game\PF\;../../vendor/DirectShow/Include;../server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG;_DO_ASSERT;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="3"
@@ -132,7 +132,7 @@
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../Server\;../Game\PF\;../../vendor/DirectShow/Include;../Server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../Server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
+				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../server\;../game\PF\;../../vendor/DirectShow/Include;../server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG;_DO_ASSERT;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="0"
@@ -223,7 +223,7 @@
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../Server\;../Game\PF\;../../vendor/DirectShow/Include;../Server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../Server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
+				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../server\;../game\PF\;../../vendor/DirectShow/Include;../server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG;_SHIPPING;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="0"
@@ -313,7 +313,7 @@
 				InlineFunctionExpansion="2"
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
-				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../Server\;../Game\PF\;../../vendor/DirectShow/Include;../Server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../Server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
+				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../server\;../game\PF\;../../vendor/DirectShow/Include;../server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STATIC_LIB;NDEBUG;_SHIPPING;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="0"
@@ -386,7 +386,7 @@
 				InlineFunctionExpansion="2"
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
-				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../Server\;../Game\PF\;../../vendor/DirectShow/Include;../Server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../Server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
+				AdditionalIncludeDirectories="../..;../../vendor\zlib\include;../;../server\;../game\PF\;../../vendor/DirectShow/Include;../server/NetworkAIO;../../vendor/ACE_wrappers;../../vendor/libcurl/include;../server/Chat;../../Vendor/Steam/1.23a/public;..\..\Vendor\boost"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STATIC_LIB;NDEBUG;_DO_ASSERT;STARFORCE_PROTECTED;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS"
 				ExceptionHandling="0"
 				BasicRuntimeChecks="0"
@@ -605,38 +605,38 @@
 			Name="HybridClient"
 			>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\HybridClient.component"
+				RelativePath="..\game\PF\client\LobbyPvx\HybridClient.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\HybridServerNodeImpl.cpp"
+				RelativePath="..\game\PF\client\LobbyPvx\HybridServerNodeImpl.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\HybridServerNodeImpl.h"
+				RelativePath="..\game\PF\client\LobbyPvx\HybridServerNodeImpl.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\HybridServer\PeeredTypes.component"
+				RelativePath="..\game\PF\HybridServer\PeeredTypes.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\HybridServer\PeeredTypes.cpp"
+				RelativePath="..\game\PF\HybridServer\PeeredTypes.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\HybridServer\PeeredTypes.h"
+				RelativePath="..\game\PF\HybridServer\PeeredTypes.h"
 				>
 			</File>
 			<Filter
 				Name=".auto"
 				>
 				<File
-					RelativePath="..\Game\PF\HybridServer\LPeered.auto.cpp"
+					RelativePath="..\game\PF\HybridServer\LPeered.auto.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\HybridServer\LPeered.auto.h"
+					RelativePath="..\game\PF\HybridServer\LPeered.auto.h"
 					>
 					<FileConfiguration
 						Name="Shipping|Win32"
@@ -675,11 +675,11 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\Game\PF\HybridServer\RPeered.auto.cpp"
+					RelativePath="..\game\PF\HybridServer\RPeered.auto.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\HybridServer\RPeered.auto.h"
+					RelativePath="..\game\PF\HybridServer\RPeered.auto.h"
 					>
 					<FileConfiguration
 						Name="Shipping|Win32"
@@ -827,15 +827,15 @@
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Statistic\GameStatClient.component"
+				RelativePath="..\game\PF\server\Statistic\GameStatClient.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Statistic\GameStatClient.cpp"
+				RelativePath="..\game\PF\server\Statistic\GameStatClient.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Statistic\GameStatClient.h"
+				RelativePath="..\game\PF\server\Statistic\GameStatClient.h"
 				>
 			</File>
 			<File
@@ -847,58 +847,58 @@
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Statistic\StatClientDiskDispatcher.cpp"
+				RelativePath="..\game\PF\server\Statistic\StatClientDiskDispatcher.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Statistic\StatClientDiskDispatcher.h"
+				RelativePath="..\game\PF\server\Statistic\StatClientDiskDispatcher.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Statistic\StatClientHttpDispatcher.component"
+				RelativePath="..\game\PF\server\Statistic\StatClientHttpDispatcher.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Statistic\StatClientHttpDispatcher.cpp"
+				RelativePath="..\game\PF\server\Statistic\StatClientHttpDispatcher.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Statistic\StatClientHttpDispatcher.h"
+				RelativePath="..\game\PF\server\Statistic\StatClientHttpDispatcher.h"
 				>
 			</File>
 			<Filter
 				Name="Types"
 				>
 				<File
-					RelativePath="..\Game\PF\Server\Statistic\GameStatServiceId.h"
+					RelativePath="..\game\PF\server\Statistic\GameStatServiceId.h"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\Statistic\SpecialStatisticTypes.cpp"
+					RelativePath="..\game\PF\server\Statistic\SpecialStatisticTypes.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\Statistic\SpecialStatisticTypes.h"
+					RelativePath="..\game\PF\server\Statistic\SpecialStatisticTypes.h"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\Statistic\StatisticsClientTypes.component"
+					RelativePath="..\game\PF\server\Statistic\StatisticsClientTypes.component"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\Statistic\StatisticsClientTypes.cpp"
+					RelativePath="..\game\PF\server\Statistic\StatisticsClientTypes.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\Statistic\StatisticsClientTypes.h"
+					RelativePath="..\game\PF\server\Statistic\StatisticsClientTypes.h"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\Statistic\StatisticsDebugTypes.cpp"
+					RelativePath="..\game\PF\server\Statistic\StatisticsDebugTypes.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\Statistic\StatisticsDebugTypes.h"
+					RelativePath="..\game\PF\server\Statistic\StatisticsDebugTypes.h"
 					>
 				</File>
 			</Filter>
@@ -995,98 +995,98 @@
 			Name="LobbyClient"
 			>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\all.component"
+				RelativePath="..\game\PF\client\LobbyPvx\all.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\ClientAccountingGadget.h"
+				RelativePath="..\game\PF\client\LobbyPvx\ClientAccountingGadget.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\FastReconnectCtx.h"
+				RelativePath="..\game\PF\client\LobbyPvx\FastReconnectCtx.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\GameClient.component"
+				RelativePath="..\game\PF\client\LobbyPvx\GameClient.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\LobbyClientBase.cpp"
+				RelativePath="..\game\PF\client\LobbyPvx\LobbyClientBase.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\LobbyClientBase.h"
+				RelativePath="..\game\PF\client\LobbyPvx\LobbyClientBase.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\LobbyClientInterface.h"
+				RelativePath="..\game\PF\client\LobbyPvx\LobbyClientInterface.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\LobbyClientLInterface.component"
+				RelativePath="..\game\PF\client\LobbyPvx\LobbyClientLInterface.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\LobbyClientRInterface.component"
+				RelativePath="..\game\PF\client\LobbyPvx\LobbyClientRInterface.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\LobbyGameClient.cpp"
+				RelativePath="..\game\PF\client\LobbyPvx\LobbyGameClient.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\LobbyGameClient.h"
+				RelativePath="..\game\PF\client\LobbyPvx\LobbyGameClient.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\stdafx.cpp"
+				RelativePath="..\game\PF\client\LobbyPvx\stdafx.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Client\LobbyPvx\stdafx.h"
+				RelativePath="..\game\PF\client\LobbyPvx\stdafx.h"
 				>
 			</File>
 			<Filter
 				Name=".auto"
 				>
 				<File
-					RelativePath="..\Game\PF\Client\LobbyPvx\LLobbyClientInterface.auto.cpp"
+					RelativePath="..\game\PF\client\LobbyPvx\LLobbyClientInterface.auto.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Client\LobbyPvx\LLobbyClientInterface.auto.h"
+					RelativePath="..\game\PF\client\LobbyPvx\LLobbyClientInterface.auto.h"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\Accounting\RLobbyAccounting.auto.cpp"
+					RelativePath="..\game\PF\server\Accounting\RLobbyAccounting.auto.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\Accounting\RLobbyAccounting.auto.h"
+					RelativePath="..\game\PF\server\Accounting\RLobbyAccounting.auto.h"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Client\LobbyPvx\RLobbyClientInterface.auto.cpp"
+					RelativePath="..\game\PF\client\LobbyPvx\RLobbyClientInterface.auto.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Client\LobbyPvx\RLobbyClientInterface.auto.h"
+					RelativePath="..\game\PF\client\LobbyPvx\RLobbyClientInterface.auto.h"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\LobbyPvx\RLobbyIEntrance.auto.cpp"
+					RelativePath="..\game\PF\server\LobbyPvx\RLobbyIEntrance.auto.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\LobbyPvx\RLobbyIEntrance.auto.h"
+					RelativePath="..\game\PF\server\LobbyPvx\RLobbyIEntrance.auto.h"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\LobbyPvx\RLobbyIServerInstance.auto.cpp"
+					RelativePath="..\game\PF\server\LobbyPvx\RLobbyIServerInstance.auto.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\LobbyPvx\RLobbyIServerInstance.auto.h"
+					RelativePath="..\game\PF\server\LobbyPvx\RLobbyIServerInstance.auto.h"
 					>
 				</File>
 			</Filter>
@@ -1094,15 +1094,15 @@
 				Name="CommonTypes"
 				>
 				<File
-					RelativePath="..\Game\PF\Server\LobbyPvx\CommonTypes.component"
+					RelativePath="..\game\PF\server\LobbyPvx\CommonTypes.component"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\LobbyPvx\CommonTypes.cpp"
+					RelativePath="..\game\PF\server\LobbyPvx\CommonTypes.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Game\PF\Server\LobbyPvx\CommonTypes.h"
+					RelativePath="..\game\PF\server\LobbyPvx\CommonTypes.h"
 					>
 				</File>
 			</Filter>
@@ -1139,15 +1139,15 @@
 			Name="RollTypes"
 			>
 			<File
-				RelativePath="..\Game\PF\Server\Roll\RollTypes.component"
+				RelativePath="..\game\PF\server\Roll\RollTypes.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Roll\RollTypes.cpp"
+				RelativePath="..\game\PF\server\Roll\RollTypes.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Game\PF\Server\Roll\RollTypes.h"
+				RelativePath="..\game\PF\server\Roll\RollTypes.h"
 				>
 			</File>
 		</Filter>
@@ -1155,32 +1155,32 @@
 			Name="WebClient"
 			>
 			<File
-				RelativePath="..\Server\WebClient\WebClient.component"
+				RelativePath="..\server\WebClient\WebClient.component"
 				>
 			</File>
 			<File
-				RelativePath="..\Server\WebClient\WebClient.cpp"
+				RelativePath="..\server\WebClient\WebClient.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\Server\WebClient\WebClient.h"
+				RelativePath="..\server\WebClient\WebClient.h"
 				>
 			</File>
 		</Filter>
 		<File
-			RelativePath="..\Game\PF\Client\LobbyPvx\base64.cpp"
+			RelativePath="..\game\PF\client\LobbyPvx\base64.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\Game\PF\Client\LobbyPvx\base64.h"
+			RelativePath="..\game\PF\client\LobbyPvx\base64.h"
 			>
 		</File>
 		<File
-			RelativePath="..\Game\PF\Client\LobbyPvx\NewReplay.cpp"
+			RelativePath="..\game\PF\client\LobbyPvx\NewReplay.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\Game\PF\Client\LobbyPvx\NewReplay.h"
+			RelativePath="..\game\PF\client\LobbyPvx\NewReplay.h"
 			>
 		</File>
 		<File

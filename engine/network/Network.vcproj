@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+﻿<?xml version="1.0" encoding="windows-1251"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
@@ -1159,27 +1159,27 @@
 				Name="Utils"
 				>
 				<File
-					RelativePath="..\Server\RdpTransport\RdpSocketFactory.h"
+					RelativePath="..\server\RdpTransport\RdpSocketFactory.h"
 					>
 				</File>
 				<File
-					RelativePath="..\Server\RdpTransport\RdpTransportMsg.cpp"
+					RelativePath="..\server\RdpTransport\RdpTransportMsg.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Server\RdpTransport\RdpTransportMsg.h"
+					RelativePath="..\server\RdpTransport\RdpTransportMsg.h"
 					>
 				</File>
 				<File
-					RelativePath="..\Server\RdpTransport\RdpTransportUtils.component"
+					RelativePath="..\server\RdpTransport\RdpTransportUtils.component"
 					>
 				</File>
 				<File
-					RelativePath="..\Server\RdpTransport\RdpTransportUtils.cpp"
+					RelativePath="..\server\RdpTransport\RdpTransportUtils.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Server\RdpTransport\RdpTransportUtils.h"
+					RelativePath="..\server\RdpTransport\RdpTransportUtils.h"
 					>
 				</File>
 			</Filter>
@@ -1219,15 +1219,15 @@
 				Name="TransportBase"
 				>
 				<File
-					RelativePath="..\Server\RdpTransport\RdpTransportChannel.component"
+					RelativePath="..\server\RdpTransport\RdpTransportChannel.component"
 					>
 				</File>
 				<File
-					RelativePath="..\Server\RdpTransport\RdpTransportChannel.cpp"
+					RelativePath="..\server\RdpTransport\RdpTransportChannel.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Server\RdpTransport\RdpTransportChannel.h"
+					RelativePath="..\server\RdpTransport\RdpTransportChannel.h"
 					>
 				</File>
 			</Filter>
@@ -1235,15 +1235,15 @@
 				Name="NewLoginTypes"
 				>
 				<File
-					RelativePath="..\Server\NewLogin\NewLoginTypes.component"
+					RelativePath="..\server\NewLogin\NewLoginTypes.component"
 					>
 				</File>
 				<File
-					RelativePath="..\Server\NewLogin\NewLoginTypes.cpp"
+					RelativePath="..\server\NewLogin\NewLoginTypes.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\Server\NewLogin\NewLoginTypes.h"
+					RelativePath="..\server\NewLogin\NewLoginTypes.h"
 					>
 				</File>
 			</Filter>
