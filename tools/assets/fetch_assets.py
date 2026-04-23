@@ -6,24 +6,32 @@ Google Drive. This script fetches the archives listed in
 tools/assets/manifest.json, verifies sha256, and extracts them into the repo
 root so that paths line up with what the engine and editor expect.
 
-Requires: Python 3.8+, `gdown` (`pip install gdown`), `tqdm` (optional).
+Requires only Python 3.8+ — no third-party dependencies.
+  Windows 10+:  py tools\\assets\\fetch_assets.py --all
+  Linux/macOS:  python3 tools/assets/fetch_assets.py --all
 """
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
-import shutil
-import subprocess
 import sys
 import tempfile
 import time
+import urllib.error
+import urllib.request
 import zipfile
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 MANIFEST_PATH = Path(__file__).resolve().parent / "manifest.json"
 MARKER_PATH = REPO_ROOT / ".assets-fetched"
+
+# Direct-download endpoint for public Drive files. The `confirm=t` bypasses
+# the >100 MB virus-scan interstitial without a token dance.
+DRIVE_DOWNLOAD_URL = "https://drive.usercontent.google.com/download?id={id}&export=download&confirm=t"
+USER_AGENT = "Mozilla/5.0 (PrimeWorld fetch_assets.py)"
+CHUNK = 1 << 20  # 1 MiB
 
 
 def load_manifest() -> dict:
@@ -47,36 +55,72 @@ def save_marker(marker: dict) -> None:
 def sha256_of(path: Path) -> str:
     h = hashlib.sha256()
     with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(1 << 20), b""):
+        for chunk in iter(lambda: f.read(CHUNK), b""):
             h.update(chunk)
     return h.hexdigest()
 
 
-def ensure_gdown() -> None:
-    try:
-        import gdown  # noqa: F401
-    except ImportError:
-        sys.exit(
-            "gdown is required: install it with `pip install gdown tqdm` and retry."
-        )
+def human_mb(n: int) -> str:
+    return f"{n / (1024 * 1024):.1f} MB"
 
 
-def download_with_gdown(gdrive_id: str, dest: Path, attempts: int = 4) -> None:
-    import gdown
+def stream_download(url: str, dest: Path, expected_size: int = 0) -> None:
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=60) as response:
+        total = expected_size or int(response.headers.get("Content-Length") or 0)
+        downloaded = 0
+        start = time.monotonic()
+        last_print = 0.0
+        is_tty = sys.stderr.isatty()
+        with dest.open("wb") as fh:
+            while True:
+                chunk = response.read(CHUNK)
+                if not chunk:
+                    break
+                fh.write(chunk)
+                downloaded += len(chunk)
+                now = time.monotonic()
+                if now - last_print >= 0.3:
+                    elapsed = max(now - start, 0.001)
+                    speed = downloaded / elapsed / (1024 * 1024)
+                    if total:
+                        pct = downloaded * 100 // total
+                        msg = f"  {pct:3d}%  {human_mb(downloaded)} / {human_mb(total)}  {speed:5.1f} MB/s"
+                    else:
+                        msg = f"  {human_mb(downloaded)}  {speed:5.1f} MB/s"
+                    if is_tty:
+                        sys.stderr.write("\r" + msg + "    ")
+                    else:
+                        sys.stderr.write(msg + "\n")
+                    sys.stderr.flush()
+                    last_print = now
+        if is_tty:
+            sys.stderr.write("\n")
+            sys.stderr.flush()
 
-    last_exc: Exception | None = None
+
+def download_drive_file(gdrive_id: str, dest: Path, expected_size: int, attempts: int = 4) -> None:
+    url = DRIVE_DOWNLOAD_URL.format(id=gdrive_id)
+    last_exc: BaseException | None = None
     backoff = 2
     for i in range(1, attempts + 1):
         try:
-            url = f"https://drive.google.com/uc?id={gdrive_id}"
-            # gdown handles the virus-scan confirmation token for >100 MB files.
-            gdown.download(url, str(dest), quiet=False, fuzzy=True)
-            if dest.exists() and dest.stat().st_size > 0:
-                return
-            raise RuntimeError("gdown finished but the file is empty")
-        except Exception as exc:
+            stream_download(url, dest, expected_size)
+            if not dest.exists() or dest.stat().st_size == 0:
+                raise RuntimeError("downloaded file is empty")
+            if expected_size and dest.stat().st_size != expected_size:
+                raise RuntimeError(
+                    f"size mismatch: expected {expected_size} bytes, got {dest.stat().st_size}"
+                )
+            return
+        except (urllib.error.URLError, urllib.error.HTTPError, OSError, RuntimeError) as exc:
             last_exc = exc
             print(f"  attempt {i}/{attempts} failed: {exc}", file=sys.stderr)
+            if dest.exists():
+                try:
+                    dest.unlink()
+                except OSError:
+                    pass
             if i < attempts:
                 time.sleep(backoff)
                 backoff *= 2
@@ -102,6 +146,7 @@ def fetch_archive(entry: dict, marker: dict, force: bool, verify_only: bool) -> 
     name = entry["name"]
     gdrive_id = entry.get("gdrive_id")
     expected_sha = entry.get("sha256")
+    expected_size = int(entry.get("size_bytes") or 0)
     extract_to = REPO_ROOT / entry.get("extract_to", ".")
 
     if not gdrive_id or gdrive_id == "TODO":
@@ -119,10 +164,11 @@ def fetch_archive(entry: dict, marker: dict, force: bool, verify_only: bool) -> 
         print(f"[{name}] verify-only: nothing on disk to verify without refetch")
         return
 
-    print(f"[{name}] downloading from Google Drive id={gdrive_id} ...")
+    size_hint = f" ({human_mb(expected_size)})" if expected_size else ""
+    print(f"[{name}] downloading from Google Drive id={gdrive_id}{size_hint} ...")
     with tempfile.TemporaryDirectory(prefix=f"pw-{name}-") as td:
         zip_path = Path(td) / f"{name}.zip"
-        download_with_gdown(gdrive_id, zip_path)
+        download_drive_file(gdrive_id, zip_path, expected_size)
 
         actual_sha = sha256_of(zip_path)
         if actual_sha != expected_sha:
@@ -170,7 +216,6 @@ def main() -> int:
             )
         return 0
 
-    ensure_gdown()
     marker = load_marker()
 
     selected = select_archives(manifest, args.tag, args.all)

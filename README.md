@@ -36,12 +36,13 @@ The pre-built battle server lives at `server/battle/build/`.
 ```powershell
 git clone https://github.com/meonisk/Prime-World.git
 cd Prime-World
-pip install gdown tqdm
-python tools\assets\fetch_assets.py --all
+py tools\assets\fetch_assets.py --all
 powershell -ExecutionPolicy Bypass -File tools\setup\setup.ps1
 # edit profiles\game.cfg: local_game 0 -> local_game 1
 client\build\Bin\PW_Game.exe
 ```
+
+Only Python 3.8+ is required (Windows 10+ ships `py`; Linux/macOS have `python3` out of the box) — the fetcher uses the standard library, no `pip install` needed.
 
 `setup.ps1` creates all the Data/Localization/Profiles junctions next to the `Bin/` folder and the old-name aliases inside `assets/` that the prebuilt `PW_Game.exe` expects. See [Preparation (manual)](#preparation-manual) below if you want to understand or reproduce those steps by hand.
 
@@ -55,7 +56,6 @@ for details and [tools/assets/manifest.json](tools/assets/manifest.json) for
 the canonical list (with the public Google Drive folder URL).
 
 ```
-pip install gdown tqdm
 # everything (~10 GB, needed for build + run + art editing):
 python tools/assets/fetch_assets.py --all
 # required-only (game assets only, enough to launch the client):
@@ -67,6 +67,8 @@ python tools/assets/fetch_assets.py --tag=source    # PSD sources
 python tools/assets/fetch_assets.py --tag=locale    # localization audio
 python tools/assets/fetch_assets.py --tag=misc      # misc large files
 ```
+
+No external packages required — the script runs on a vanilla Python 3.8+ install. On Windows replace `python` with `py` if the former isn't on PATH.
 
 | Archive | Contents | Required |
 |---------|----------|----------|

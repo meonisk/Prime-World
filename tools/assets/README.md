@@ -12,13 +12,19 @@ Helpers for managing the large binary archives that live outside git.
 ## Typical flows
 
 **Contributor: get a runnable repo**
+
+`fetch_assets.py` is pure-stdlib — Python 3.8+ is the only requirement. Windows 10+ has the `py` launcher bundled; Linux/macOS have `python3` pre-installed.
+
 ```
-pip install gdown tqdm
 python tools/assets/fetch_assets.py --all          # everything
 python tools/assets/fetch_assets.py                # required-only (engine/editor runtime)
 python tools/assets/fetch_assets.py --tag=assets   # just the game assets
 python tools/assets/fetch_assets.py --tag=vendor   # just third-party prebuilt libs
+python tools/assets/fetch_assets.py --list         # see what's available
+python tools/assets/fetch_assets.py --verify       # sanity-check the marker vs manifest
 ```
+
+The script downloads each archive from the public Google Drive folder (see `gdrive_folder_url` in the manifest), verifies sha256, extracts it into the repo root, and records progress in `.assets-fetched` so re-running is cheap.
 
 **Maintainer: publish a new archive set**
 ```
