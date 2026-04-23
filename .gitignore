@@ -10,6 +10,10 @@ server/*/build/logs/
 .assets-fetched
 dist/assets-archives/
 
+# Python build artifacts from tools/assets scripts.
+__pycache__/
+*.pyc
+
 # Game assets — delivered via pw-assets-*.zip (see tools/assets/manifest.json).
 /assets/heroes/
 /assets/ui/
