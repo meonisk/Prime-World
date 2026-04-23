@@ -155,8 +155,14 @@ It's necessary to have folders `Localization`, `Profiles`, and `Data` next to th
 4. Find the line `setvar gfx_fullscreen = 0` — this will launch the game in windowed mode, which may work more stable.
 5. Other optimization settings can also be changed in the `performance section`.
 
-## Repository structure reference
-See [docs/REPO_STRUCTURE.md](docs/REPO_STRUCTURE.md) for the full layout, the complete migration map (old → new paths) and notes on known follow-ups (build-config paths, runtime data discovery, deduplication of the PvX data mirror).
+## Repository structure and contributor docs
+
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — component map (client / server / engine / editor / tools), build artefacts, runtime data flow, inter-module dependencies.
+- [docs/REPO_STRUCTURE.md](docs/REPO_STRUCTURE.md) — physical layout, asset inventory and the old → new migration map.
+- [docs/REFACTORING_PLAN.md](docs/REFACTORING_PLAN.md) — staged cleanup plan (build hygiene → mechanical → semantic → modernisation).
+- [docs/CODE_REVIEW.md](docs/CODE_REVIEW.md) — PR template, review process, module ownership.
+- [docs/CODE_DOCUMENTATION.md](docs/CODE_DOCUMENTATION.md) — documentation standard across C++, C#, Python, PHP, AS3, Lua, HLSL.
+- Per-module overviews: [client/](client/README.md), [server/](server/README.md), [engine/](engine/README.md), [editor/](editor/README.md).
 
 ## Acknowledgements
 To the **Prime World: Classic** community for their contribution to open-source development, documentation, and bug fixing.
