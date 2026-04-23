@@ -5,3 +5,81 @@ logs/
 editor/build/logs/
 client/build/logs/
 server/*/build/logs/
+
+# Payload fetched by tools/assets/fetch_assets.py — never commit it back into git.
+.assets-fetched
+dist/assets-archives/
+
+# Game assets — delivered via pw-assets-*.zip (see tools/assets/manifest.json).
+/assets/heroes/
+/assets/ui/
+/assets/maps/
+/assets/effects/
+/assets/test/
+/assets/terrain/
+/assets/summons/
+/assets/buildings/
+/assets/creeps/
+/assets/mini-games/
+/assets/audio/
+/assets/gfx-textures/
+/assets/items/
+/assets/social/
+/assets/shaders/
+
+# Pre-compiled source art — delivered via pw-assets-source.zip.
+/assets-source/
+
+# Third-party prebuilt libraries — delivered via pw-vendor-prebuilt.zip.
+# See docs/vendor-notes/ for notes on what's missing and where to get it.
+/vendor/boost/stage/
+/vendor/Maya/
+/vendor/wxWidgets/lib/
+/vendor/Steam/
+/vendor/CEF/
+/vendor/Tamarin/
+/vendor/fmod/
+/vendor/ACE_wrappers/
+/vendor/DirectSSN/
+/vendor/xulrunner-sdk/
+/vendor/MySQL/
+/vendor/Thrift/
+/vendor/OpenSSL/
+/vendor/MacOS/
+/vendor/SharpSvn/
+
+# Localization audio — delivered via pw-localization-audio.zip. Text stays in git.
+localization/en-US/**/*.fsb
+localization/en-US/**/*.ogg
+localization/en-US/**/*.wav
+localization/en-US/**/*.mp3
+localization/en-US/**/*.bnk
+localization/de-DE/**/*.fsb
+localization/de-DE/**/*.ogg
+localization/de-DE/**/*.wav
+localization/de-DE/**/*.mp3
+localization/de-DE/**/*.bnk
+localization/fr-FR/**/*.fsb
+localization/fr-FR/**/*.ogg
+localization/fr-FR/**/*.wav
+localization/fr-FR/**/*.mp3
+localization/fr-FR/**/*.bnk
+localization/tr-TR/**/*.fsb
+localization/tr-TR/**/*.ogg
+localization/tr-TR/**/*.wav
+localization/tr-TR/**/*.mp3
+localization/tr-TR/**/*.bnk
+localization/lt-LT/**/*.fsb
+localization/lt-LT/**/*.ogg
+localization/lt-LT/**/*.wav
+localization/lt-LT/**/*.mp3
+localization/lt-LT/**/*.bnk
+
+# Misc large one-off files — delivered via pw-misc-large.zip.
+/client/flash-ui/selectFraction.fla
+/client/flash-ui/library.fla
+/client/flash-ui/main.fla
+/client/flash-ui/xmlswf/main.swf.xml
+/docs/Prime World Art Tech Specs/QIP-Shot-Video-010.gif
+/server/social/vendor/pygeoip/data/GeoIPCity.dat
+/engine/scene/TestsData/TimeSlider/Shaders/BasicMaterial.shd
