@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "gdrive_folder_url": "TODO: paste the public Google Drive folder URL here after upload",
+  "archives": [
+    {
+      "name": "pw-assets-heroes",
+      "tag": "assets",
+      "required": true,
+      "gdrive_id": "TODO",
+      "sha256": "TODO",
+      "size_bytes": 0,
+      "sources": ["assets/heroes"],
+      "extract_to": "."
+    },
+    {
+      "name": "pw-assets-ui",
+      "tag": "assets",
+      "required": true,
+      "gdrive_id": "TODO",
+      "sha256": "TODO",
+      "size_bytes": 0,
+      "sources": ["assets/ui"],
+      "extract_to": "."
+    },
+    {
+      "name": "pw-assets-maps",
+      "tag": "assets",
+      "required": true,
+      "gdrive_id": "TODO",
+      "sha256": "TODO",
+      "size_bytes": 0,
+      "sources": ["assets/maps"],
+      "extract_to": "."
+    },
+    {
+      "name": "pw-assets-misc",
+      "tag": "assets",
+      "required": true,
+      "gdrive_id": "TODO",
+      "sha256": "TODO",
+      "size_bytes": 0,
+      "sources": [
+        "assets/effects",
+        "assets/test",
+        "assets/terrain",
+        "assets/summons",
+        "assets/buildings",
+        "assets/creeps",
+        "assets/mini-games",
+        "assets/audio",
+        "assets/gfx-textures",
+        "assets/items",
+        "assets/social",
+        "assets/shaders"
+      ],
+      "extract_to": "."
+    },
+    {
+      "name": "pw-assets-source",
+      "tag": "source",
+      "required": false,
+      "gdrive_id": "TODO",
+      "sha256": "TODO",
+      "size_bytes": 0,
+      "sources": ["assets-source"],
+      "extract_to": "."
+    },
+    {
+      "name": "pw-vendor-prebuilt",
+      "tag": "vendor",
+      "required": false,
+      "gdrive_id": "TODO",
+      "sha256": "TODO",
+      "size_bytes": 0,
+      "sources": [
+        "vendor/boost/stage",
+        "vendor/Maya",
+        "vendor/wxWidgets/lib",
+        "vendor/Steam",
+        "vendor/CEF",
+        "vendor/Tamarin",
+        "vendor/fmod",
+        "vendor/ACE_wrappers",
+        "vendor/DirectSSN",
+        "vendor/xulrunner-sdk",
+        "vendor/MySQL",
+        "vendor/Thrift",
+        "vendor/OpenSSL",
+        "vendor/MacOS",
+        "vendor/SharpSvn"
+      ],
+      "extract_to": "."
+    },
+    {
+      "name": "pw-localization-audio",
+      "tag": "locale",
+      "required": false,
+      "gdrive_id": "TODO",
+      "sha256": "TODO",
+      "size_bytes": 0,
+      "sources": [
+        "localization/en-US",
+        "localization/de-DE",
+        "localization/fr-FR",
+        "localization/tr-TR",
+        "localization/lt-LT"
+      ],
+      "extract_to": ".",
+      "include_globs": ["**/*.fsb", "**/*.ogg", "**/*.wav", "**/*.mp3", "**/*.bnk"]
+    },
+    {
+      "name": "pw-misc-large",
+      "tag": "misc",
+      "required": false,
+      "gdrive_id": "TODO",
+      "sha256": "TODO",
+      "size_bytes": 0,
+      "sources": [
+        "client/flash-ui/selectFraction.fla",
+        "client/flash-ui/library.fla",
+        "client/flash-ui/main.fla",
+        "client/flash-ui/xmlswf/main.swf.xml",
+        "docs/Prime World Art Tech Specs/QIP-Shot-Video-010.gif",
+        "server/social/vendor/pygeoip/data/GeoIPCity.dat",
+        "engine/scene/TestsData/TimeSlider/Shaders/BasicMaterial.shd"
+      ],
+      "extract_to": "."
+    }
+  ]
+}

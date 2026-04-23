@@ -31,6 +31,43 @@ The game data editor lives at `client/build/Bin/PF_Editor.exe` (shipped alongsid
 The pre-built battle client lives at `client/build/Bin/PW_Game.exe`.
 The pre-built battle server lives at `server/battle/build/`.
 
+## Getting the assets
+
+A fresh `git clone` contains only code and metadata (~200 MB). The heavy
+binaries — game assets, pre-compiled source art, third-party prebuilt
+libraries, localization audio — live as zip archives on Google Drive and are
+pulled in by a helper script. See [tools/assets/README.md](tools/assets/README.md)
+for details and [tools/assets/manifest.json](tools/assets/manifest.json) for
+the canonical list (with the public Google Drive folder URL).
+
+```
+pip install gdown tqdm
+# everything (~10 GB, needed for build + run + art editing):
+python tools/assets/fetch_assets.py --all
+# required-only (game assets only, enough to launch the client):
+python tools/assets/fetch_assets.py
+# selective:
+python tools/assets/fetch_assets.py --tag=assets    # game assets
+python tools/assets/fetch_assets.py --tag=vendor    # third-party prebuilt
+python tools/assets/fetch_assets.py --tag=source    # PSD sources
+python tools/assets/fetch_assets.py --tag=locale    # localization audio
+python tools/assets/fetch_assets.py --tag=misc      # misc large files
+```
+
+| Archive | Contents | Required |
+|---------|----------|----------|
+| `pw-assets-heroes.zip` | `assets/heroes/` | yes |
+| `pw-assets-ui.zip` | `assets/ui/` | yes |
+| `pw-assets-maps.zip` | `assets/maps/` | yes |
+| `pw-assets-misc.zip` | `assets/effects`, `test`, `terrain`, `summons`, `buildings`, `creeps`, `mini-games`, `audio`, `gfx-textures`, `items`, `social`, `shaders` | yes |
+| `pw-assets-source.zip` | `assets-source/` (PSD, source art) | no |
+| `pw-vendor-prebuilt.zip` | `vendor/boost/stage`, `Maya`, `wxWidgets/lib`, `Steam`, `CEF`, `Tamarin`, `fmod`, `ACE_wrappers`, `DirectSSN`, `xulrunner-sdk`, `MySQL`, `Thrift`, `OpenSSL`, `MacOS`, `SharpSvn` | no |
+| `pw-localization-audio.zip` | `localization/{en-US,de-DE,fr-FR,tr-TR,lt-LT}/**/*.{fsb,ogg,wav,mp3,bnk}` | no |
+| `pw-misc-large.zip` | `client/flash-ui/*.fla`, `client/flash-ui/xmlswf/main.swf.xml`, `docs/Prime World Art Tech Specs/QIP-Shot-Video-010.gif`, `server/social/vendor/pygeoip/data/GeoIPCity.dat`, `engine/scene/TestsData/TimeSlider/Shaders/BasicMaterial.shd` | no |
+
+The fetch script verifies each archive's sha256 against the manifest and
+records a marker in `.assets-fetched` so re-running it is cheap.
+
 ## Preparation
 You need to assemble a runnable client from the repository contents. Because the compiled executables expect `Data/`, `Localization/` and `Profiles/` next to the `Bin` directory, you create a working directory by combining them:
 
