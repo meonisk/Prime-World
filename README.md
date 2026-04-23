@@ -31,6 +31,20 @@ The game data editor lives at `client/build/Bin/PF_Editor.exe` (shipped alongsid
 The pre-built battle client lives at `client/build/Bin/PW_Game.exe`.
 The pre-built battle server lives at `server/battle/build/`.
 
+## Quick start
+
+```powershell
+git clone https://github.com/meonisk/Prime-World.git
+cd Prime-World
+pip install gdown tqdm
+python tools\assets\fetch_assets.py --all
+powershell -ExecutionPolicy Bypass -File tools\setup\setup.ps1
+# edit profiles\game.cfg: local_game 0 -> local_game 1
+client\build\Bin\PW_Game.exe
+```
+
+`setup.ps1` creates all the Data/Localization/Profiles junctions next to the `Bin/` folder and the old-name aliases inside `assets/` that the prebuilt `PW_Game.exe` expects. See [Preparation (manual)](#preparation-manual) below if you want to understand or reproduce those steps by hand.
+
 ## Getting the assets
 
 A fresh `git clone` contains only code and metadata (~200 MB). The heavy
@@ -68,7 +82,7 @@ python tools/assets/fetch_assets.py --tag=misc      # misc large files
 The fetch script verifies each archive's sha256 against the manifest and
 records a marker in `.assets-fetched` so re-running it is cheap.
 
-## Preparation
+## Preparation (manual)
 You need to assemble a runnable client from the repository contents. Because the compiled executables expect `Data/`, `Localization/` and `Profiles/` next to the `Bin` directory, you create a working directory by combining them:
 
 1. Take `client/build/Bin` — this has `PW_Game.exe` and friends.
@@ -79,12 +93,14 @@ You need to assemble a runnable client from the repository contents. Because the
 6. Run the client again. You should see the lobby where you can select a map, hero, and start a battle.
 7. In the game, press the Tilde (~) key on the keyboard, and you will see the console for entering cheat codes.
 
-On Windows you can create junctions instead of copying:
+On Windows you can create junctions instead of copying (run from `client\build\`):
 ```
-mklink /J Data ..\..\..\assets
-mklink /J Localization ..\..\..\localization
-mklink /J Profiles ..\..\..\profiles
+mklink /J Data ..\..\assets
+mklink /J Localization ..\..\localization
+mklink /J Profiles ..\..\profiles
 ```
+
+The prebuilt `PW_Game.exe` also expects the pre-restructure folder names (`GameLogic/`, `GFX_Textures/`, `Server/`, `Dialog/`, `MiniGames/`, `SocialTest/`) inside `assets/`. Create matching junctions to the new kebab-case names, or just run `tools\setup\setup.ps1` which does all of the above.
 
 If any errors occur, check the log files in the `logs/` directory next to the executable.
 
