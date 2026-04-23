@@ -6,6 +6,34 @@ editor/build/logs/
 client/build/logs/
 server/*/build/logs/
 
+# IDE / editor files
+.vs/
+.vscode/
+*.user
+*.suo
+*.opendb
+.settings/
+.metadata/
+*.swp
+*~
+
+# OS thumbnail / index files
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Compile artefacts (beyond build/ and *.pdb already above)
+*.obj
+*.exp
+*.ilk
+*.lastbuildstate
+*.tlog
+
+# Python envs (the fetch/build scripts are stdlib-only, but rebuild tasks may use venv)
+venv/
+.venv/
+env/
+
 # Runtime junctions created by tools/setup/setup.ps1
 # (old-name aliases so the prebuilt PW_Game.exe finds assets under the new kebab-case layout)
 /assets/Dialog
